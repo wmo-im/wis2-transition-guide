@@ -1,0 +1,46 @@
+:title: Draft guidance on transition from GTS to WIS2
+:titletext: {title}
+:version: 2.0.0alpha1
+:date: 2023-09-26
+:copyright: Copyright © 2023 World Meteorological Organization (WMO)
+:doctype: book
+:encoding: utf-8
+:lang: en
+:toc:
+:toc-placement!:
+:toclevels: 3
+:sectnums:
+:sectnumlevels: 4
+:sectanchors:
+:sectnum-start: 2
+
+= {title}
+
+<<<
+[cols = "<",frame = "none",grid = "none"]
+|===
+|{set:cellbgcolor:#FFFFFF}
+|[big]*World Meteorological Organization*
+|Date: {date}
+|Version: {version}
+|Document location: https://community.wmo.int/wis2-transition-guide
+|Standing Committee on Information Management and Technology (SC-IMT)footnote:[https://community.wmo.int/governance/commission-membership/commission-observation-infrastructures-and-information-systems-infcom/commission-infrastructure-officers/infcom-management-group/standing-committee-information-management-and-technology-sc-imt]
+|Commission for Observation, Infrastructure and Information Systems (INFCOM)footnote:[https://community.wmo.int/governance/commission-membership/infcom]
+|{copyright}
+|===
+
+<<<
+toc::[]
+<<<
+
+include::sections/preamble.adoc[]
+
+include::sections/introduction.adoc[]
+
+include::sections/principles.adoc[]
+
+include::sections/gts_to_wis2_gateway.adoc[]
+
+include::sections/wis2_to_gts_gateway.adoc[]
+
+include::sections/references.adoc[]

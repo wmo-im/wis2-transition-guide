@@ -1,0 +1,21 @@
+== Principles
+
+The following principles are appropriate for the transition:
+
+
+**Principle **1: Each NMHS will be able to make the migration during the agreed period 2025-2030:
+
+* Considering the fact that not all centers have the same skills and facilities, and the operational aspects of WIS and the risks involved in a big-bang approach, the WIS node implementation would not be fully implemented at the same time
+
+**Principle 2**: No GTS data loss during the transition:
+
+* During the pilot phase, and in coordination with the regional associations and GISCs, WIS2 infrastructure will be established in order to avoid data loss during the transition. The aim of this infrastructure is to ensure that data sent on the GTS can be received by a site having migrated on WIS2, and data, previously sent on the GTS, sent on WIS2 can be received by a site still on the GTS
+
+**Principle 3**: Each Centre will decide when decommissioning the WIS1 and GTS:
+
+* Decommissioning WIS1 services, as well as GTS ones, will be the decision of each NC/DCPC/GISC when they will consider that their and their user’s migration is completed
+* After migration to WIS2, It is not required to run an MSS to receive or send data from Centers not having made the transition. The Center will decide when and if they want to stop their Message Switching System MSS. They can also stop the data dissemination to GTS
+
+**Principle 4**: New data (eg. GBON, Climate, Hydrology, Cryosphere) will be exchanged solely on WIS2:
+
+* WIS2 is designed to to enable the WMO Unified Data Policy, and to support the WMO Global Basic Observing Network. The new data will be available on WIS2. A center not having made the migration to WIS2 will not receive the new data. This data will not have a GTS headers TTAAii and will not be exchanged over the GTS

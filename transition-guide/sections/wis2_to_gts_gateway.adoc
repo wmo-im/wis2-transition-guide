@@ -1,0 +1,29 @@
+==  WIS2 to GTS Gateway
+
+The Executive Council, with resolution 34 (EC-76), endorsed the WMO Information System 2.0 (WIS2) implementation plan and recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it in order to be ready for a preoperational phase in 2024, and then for the transition starting on 2025. According to the WIS2 implementation plan, the Global Telecommunication System (GTS) will be decommissioned by 2030, and National Meteorological and Hydrological Services (NMHSs) will use the WIS2 platform for data exchange.
+
+During the transition period, in order to avoid some WIS centres being forced to run both data sharing frameworks simultaneously for WIS2 and GTS, with the challenges associated with maintaining two operational systems for the same purpose, a gateway from WIS2 to GTS will be designed during the WIS2 pilot phase, taking into account the time required for Members to migrate to the new systems and minimizing the time a member has to operate both systems in parallel.
+
+=== Purpose
+
+The purpose of this gateway is to enable GTS members who have not yet migrated to WIS2 to continue to receive GTS data from GTS members who have migrated to WIS2 and stopped their GTS systems.
+
+**Note**: Only data that have been already published in GTS are concerned by this gateway, New data will be available **only** on WIS2.
+
+=== WIS2 to GTS Gateway provider
+
+The gateway will be provided by the Regional Telecommunication Hubs (RTH)
+
+=== Technical requirements
+
+To enable the Gateway, providers to do the mapping from WIS2 to GTS, and data providers shall include in the WIS2 Notification Message (WNM) a GTS property as follows:
+
+[source,json]
+-----
+"properties": {
+  …
+  "gts": {
+       "ttaaii": "FTAE31",
+       "cccc": "whatever"
+  }
+-----

@@ -1,0 +1,8 @@
+== Introduction
+
+The WMO Information System 2.0 (WIS2) will be implemented according to the schedule provided in Figure 1. A one-year pilot phase will start at the end of 2022, with several countries collaborating in building the WIS2 infrastructure. Each Country will have a different role in the WIS2 framework and will implement a specific component.
+
+.WIS2 implementation timeline
+image::images/wis2-timeline.png[WIS2 implementation timeline]
+
+According to the WIS2 implementation plan (see figure 1), the Global Telecommunication System (GTS) will be decommissioned by 2030, and National Meteorological and Hydrological Services NMHSs will use the WIS2 platform for data exchange. During the transition period, there will be a mix of centers operating WIS2 and WIS/GTS. Some of them will be running both data-sharing frameworks simultaneously, with the difficulties associated with maintaining two operational systems for the same purpose. Therefore, a transition plan will be developed during the pilot phase, taking into account the time necessary for Members to migrate to the new systems and reducing, at the minimum, the time of parallel operation of both systems for a Member.
