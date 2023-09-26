@@ -4,8 +4,8 @@ on:
   push:
     branches:
     - main
-#    paths:
-#      - 'transition-guide/**'
+    paths:
+    - 'transition-guide/**'
 
 env:
   FILE_BASENAME: wis2-transition-guide-DRAFT
