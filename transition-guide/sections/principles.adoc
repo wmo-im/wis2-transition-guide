@@ -5,7 +5,7 @@ The following principles are appropriate for the transition:
 
 **Principle **1: Each NMHS will be able to make the migration during the agreed period 2025-2030:
 
-* Considering the fact that not all centers have the same skills and facilities, and the operational aspects of WIS and the risks involved in a big-bang approach, the WIS node implementation would not be fully implemented at the same time
+* Considering the fact that not all centres have the same skills and facilities, and the operational aspects of WIS and the risks involved in a big-bang approach, the WIS node implementation would not be fully implemented at the same time
 
 **Principle 2**: No GTS data loss during the transition:
 
@@ -14,8 +14,8 @@ The following principles are appropriate for the transition:
 **Principle 3**: Each Centre will decide when decommissioning the WIS1 and GTS:
 
 * Decommissioning WIS1 services, as well as GTS ones, will be the decision of each NC/DCPC/GISC when they will consider that their and their user’s migration is completed
-* After migration to WIS2, It is not required to run an MSS to receive or send data from Centers not having made the transition. The Center will decide when and if they want to stop their Message Switching System MSS. They can also stop the data dissemination to GTS
+* After migration to WIS2, It is not required to run an MSS to receive or send data from Centres not having made the transition. The Centre will decide when and if they want to stop their Message Switching System MSS. They can also stop the data dissemination to GTS
 
 **Principle 4**: New data (eg. GBON, Climate, Hydrology, Cryosphere) will be exchanged solely on WIS2:
 
-* WIS2 is designed to to enable the WMO Unified Data Policy, and to support the WMO Global Basic Observing Network. The new data will be available on WIS2. A center not having made the migration to WIS2 will not receive the new data. This data will not have a GTS headers TTAAii and will not be exchanged over the GTS
+* WIS2 is designed to to enable the WMO Unified Data Policy, and to support the WMO Global Basic Observing Network. The new data will be available on WIS2. A centre not having made the migration to WIS2 will not receive the new data. This data will not have a GTS headers TTAAii and will not be exchanged over the GTS
