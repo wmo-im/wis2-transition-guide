@@ -1,0 +1,30 @@
+= WIS2 Guide on Transition 
+== Preamble 
+== Purpose
+== Audience
+== Status of this document
+== WIS2.0 implementation plan
+== Transition principles
+:sectnums:
+== Migration from GTS to WIS2
+=== Pre-operational and operational phases
+==== Definition of pre-operational phase  
+==== How to make transition from pilot to pre-operational 
+==== How to make transition from pre-operational to operational 
+== Temporary Global Services 
+=== GTS to WIS2 gateway 
+=== WIS2 to GTS gateway  
+== Management of WIS1 and GTS 
+=== Maintenance and operation of MSS 
+==== MTN 
+==== RTH 
+==== GTS nodes 
+== Management of GTS Abbreviated Headings 
+=== GTS during transition phase 
+=== GTS Headings for ICAO (AFTN) 
+== Management of WIS Centers 
+=== NCs 
+=== DCPCs 
+== Management of WIS1 Catalogue 
+== Transition monitoring 
+=== KPIs 
