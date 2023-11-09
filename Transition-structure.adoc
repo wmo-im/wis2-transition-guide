@@ -4,7 +4,7 @@
 == Purpose
 == Audience
 == Status of this document
-== WIS2.0 implementation plan
+== WIS 2.0 implementation plan
 == Transition principles
 :sectnums:
 == Migration from GTS to WIS2
