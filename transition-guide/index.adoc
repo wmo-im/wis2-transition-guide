@@ -43,4 +43,6 @@ include::sections/gts_to_wis2_gateway.adoc[]
 
 include::sections/wis2_to_gts_gateway.adoc[]
 
+include::sections/wis1cat.adoc[]
+
 include::sections/references.adoc[]
