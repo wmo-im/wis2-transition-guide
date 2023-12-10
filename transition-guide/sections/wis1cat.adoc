@@ -1,0 +1,19 @@
+== Management of the WIS1 Catalogue
+
+With the start of the pre-operational phase of WIS2, GISCs do no longer need to maintain and provide their own WIS1 Catalogue. In order to be able to decommission their copies of the Catalogue, GISCs SHALL liaise with their users and with centers in their AoR and point them to the WIS Portals of the WIS Catalogue Authorities, namely GISC Seoul and GISC Offenbach. GISC Seoul and GISC Offenbach will continue to provide WIS1 discovery metadata and the WIS1 Catalogue until the transition from GTS and WIS1 to WIS2 is advanced. ET-W2AT together with ET-OM propose to INFCOM the final date when the WIS1 Catalogue can be decomissioned in due time.
+
+=== Management of Metadata
+
+With the start of the pre-operational phase updates to WIS1 discovery metadata should be limited to important changes. Important changes are limited to:
+* updates to the points of contact
+* updates to the data formats / encoding
+* updates to the contents of the data 
+Editoral changes or other updates to the discovery metadata for changes that do not affect data users will not be possible after the start of the pre-operational phase.
+
+When GISCs decide to decomission and turn off their WIS1 catalogue and services they should arrange with GISC Offenbach and GISC Seoul how discovery metadata can be maintained. Also they should inform GISC Offenbach and GISC Seoul when their OAI interfaces become unavailable. GISCs may decide to continue to host their discovery metadata catalogue and their WIS1 services for the time being. In this case they should ensure the functioning of their respective OAI interfaces.
+
+New discovery metadata should not be added to the WIS1 Catalogue any more. Instead new data should only be added in WCMP2 to the Global Discovery Catalogue for WIS2.
+
+=== Global Discovery Catalogue
+
+Users of the WIS1 discovery metadata catalogue should be informed by GISCs about the availability of WIS2 discovery metadata in the Global Discovery Catalogue. GISCs should provide guidance and asist their users in accessing and working with the WIS2 catalogue. With the start of the operational phase of WIS2, the Global Discovery Catalogues become the authoritative source for discovery metadata in WIS while the WIS1 catalogue will be terminated.
