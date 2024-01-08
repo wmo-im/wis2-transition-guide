@@ -496,8 +496,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_wis2_to_gts_gateway">5. WIS2 to GTS Gateway</a>
 <ul class="sectlevel2">
 <li><a href="#_purpose_3">5.1. Purpose</a></li>
-<li><a href="#_wis2_to_gts_gateway_provider">5.2. WIS2 to GTS Gateway provider</a></li>
-<li><a href="#_technical_requirements_2">5.3. Technical requirements</a></li>
+<li><a href="#_wis2_to_gts_gateway_operators">5.2. WIS2 to GTS Gateway operators</a></li>
+<li><a href="#_technical_requirements_2">5.3. Technical requirements</a>
+<ul class="sectlevel3">
+<li><a href="#_for_data_providers">5.3.1. For Data Providers</a></li>
+<li><a href="#_for_wis2_to_gts_gateway_operators">5.3.2. For WIS2 to GTS Gateway operators</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#_management_of_the_wis1_catalogue">6. Management of the WIS1 Catalogue</a>
@@ -676,30 +681,66 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_wis2_to_gts_gateway"><a class="anchor" href="#_wis2_to_gts_gateway"></a>5. WIS2 to GTS Gateway</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Executive Council, with resolution 34 (EC-76), endorsed the WMO Information System 2.0 (WIS2) implementation plan and recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it in order to be ready for a preoperational phase in 2024, and then for the transition starting on 2025. According to the WIS2 implementation plan, the Global Telecommunication System (GTS) will be decommissioned by 2030, and National Meteorological and Hydrological Services (NMHSs) will use the WIS2 platform for data exchange.</p>
+<p>The WIS2 Implementation plan outlines a gradual transition of data exchange from the Global Telecommunications System (GTS) to WIS2. The transition is expected to occur between 2025 and 2030. The GTS will be decommissioned once the transition is complete.</p>
 </div>
 <div class="paragraph">
-<p>During the transition period, in order to avoid some WIS centres being forced to run both data sharing frameworks simultaneously for WIS2 and GTS, with the challenges associated with maintaining two operational systems for the same purpose, a gateway from WIS2 to GTS will be designed during the WIS2 pilot phase, taking into account the time required for Members to migrate to the new systems and minimizing the time a member has to operate both systems in parallel.</p>
+<p>Once a WIS centre has migrated from GTS to WIS2, subject to validation of readiness, the centre will cease to share data on the GTS. Consequently, during the transition period some data will be published on the GTS and some via WIS2.</p>
+</div>
+<div class="paragraph">
+<p>WIS centres will need data published via both systems.</p>
+</div>
+<div class="paragraph">
+<p>To remove the need for WIS centres to operate both GTS and WIS2 systems in parallel, real-time data published via WIS2 will be automatically re-published onto the GTS. The system responsible is referred to as the <strong>WIS2 to GTS Gateway</strong>.</p>
+</div>
+<div class="paragraph">
+<p>To ensure resilient operation there will be more than one WIS2 to GTS Gateway.</p>
 </div>
 <div class="sect2">
 <h3 id="_purpose_3"><a class="anchor" href="#_purpose_3"></a>5.1. Purpose</h3>
 <div class="paragraph">
-<p>The purpose of this gateway is to enable GTS members who have not yet migrated to WIS2 to continue to receive GTS data from GTS members who have migrated to WIS2 and stopped their GTS systems.</p>
+<p>The purpose of the WIS2 to GTS Gateway is to enable Members relying on the GTS, who are yet to migrate to WIS2, to receive operational data published via WIS2 that would otherwise be unavailable on the GTS.</p>
 </div>
 <div class="paragraph">
-<p><strong>Note</strong>: Only data that have been already published in GTS are concerned by this gateway, New data will be available <strong>only</strong> on WIS2.</p>
+<p><strong>Note</strong>: Only data that have been already published in GTS are concerned by this Gateway, New data will be available <strong>only</strong> on WIS2.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_wis2_to_gts_gateway_provider"><a class="anchor" href="#_wis2_to_gts_gateway_provider"></a>5.2. WIS2 to GTS Gateway provider</h3>
+<h3 id="_wis2_to_gts_gateway_operators"><a class="anchor" href="#_wis2_to_gts_gateway_operators"></a>5.2. WIS2 to GTS Gateway operators</h3>
 <div class="paragraph">
-<p>The gateway will be provided by dedicated Regional Telecommunication Hubs (RTH).</p>
+<p>The gateway will be provided by designated Regional Telecommunication Hubs (RTH). These RTHs are: [TODO: Add the RTHs that will each operate a WIS2-to-GTS Gateway. Provisional list is: China, UK, Brazil.]</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_technical_requirements_2"><a class="anchor" href="#_technical_requirements_2"></a>5.3. Technical requirements</h3>
+<div class="sect3">
+<h4 id="_for_data_providers"><a class="anchor" href="#_for_data_providers"></a>5.3.1. For Data Providers</h4>
 <div class="paragraph">
-<p>To enable the Gateway, providers to do the mapping from WIS2 to GTS, and data providers shall include in the WIS2 Notification Message (WNM) a GTS property as follows:</p>
+<p>A Member seeking to stop GTS transmission shall contact the WMO Secretariat, providing the following information:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The proposed date that GTS transmission will stop.</p>
+</li>
+<li>
+<p>The WIS2 centre-id from which data destined for GTS transmission will be published.</p>
+</li>
+<li>
+<p>The GTS header CCCC code to be used for the bulletins published on their behalf.</p>
+</li>
+<li>
+<p>The list of GTS bulletins, and, where appropriate, their cut-off times, to be published by the Gateway on their behalf.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Once the Secretariat is satisfied that the Member&#8217;s WIS2 Node is operationally ready, they will confirm the date on which the Member will stop published to the GTS. On this date the WIS2 to GTS Gateways will take over.</p>
+</div>
+<div class="paragraph">
+<p>When publishing a WIS2 Notification Message for data that should also be shared on the GTS, the Data Provider shall indicate the GTS Abbreviated Header (AHL) of the bulletin in which the data is to be published.</p>
+</div>
+<div class="paragraph">
+<p>This is done by including the <code>gts</code> property in the WIS2 Notification Message (see example below). This enables the WIS2 to GTS Gateway operator to easily identify data for republication on the GTS and the AHL of the associated bulletin.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -707,8 +748,124 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
   …
   "gts": {
        "ttaaii": "FTAE31",
-       "cccc": "whatever"
-  }</code></pre>
+       "cccc": "VTBB"
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_for_wis2_to_gts_gateway_operators"><a class="anchor" href="#_for_wis2_to_gts_gateway_operators"></a>5.3.2. For WIS2 to GTS Gateway operators</h4>
+<div class="paragraph">
+<p>A WIS2 to GTS Gateway operator shall operate the following components throughout the transition period:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>A WIS2 client application to retrieve data published on WIS2.</p>
+</li>
+<li>
+<p>A Message Switching System (MSS), with routing configuration to all other RTHs on the MTN.</p>
+</li>
+<li>
+<p>Connectivity with the GTS Main Trunk Network (MTN).</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Each WIS2 to GTS Gateway shall republish data on behalf of all Members who have stopped publishing to the GTS.</p>
+</div>
+<div class="paragraph">
+<p>When a Member requests to stop their GTS transmission, the Secretariat will provide the following information to each WIS2 to GTS Gateway operator:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The <code>centre-id</code> of the WIS2 Node from which the data destined for GTS transmission will be published on WIS2.</p>
+</li>
+<li>
+<p>The GTS header <strong>CCCC</strong> code to be used when publishing bulletins on behalf of that WIS2 Node.</p>
+</li>
+<li>
+<p>The list GTS bulletins and cut-off times the Member requires to be published.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The Secretariat will set a mutually acceptable date for transfer of responsibility from Member to Gateways for GTS publication, allowing adequate set-up time for the Gateway operators. On that date, the Gateway operators will take over responsibility for publication of data on the GTS for the Member.</p>
+</div>
+<div class="paragraph">
+<p>For each Member whose GTS transmission responsibility is passed to the WIS2 to GTS Gateway, the Gateway will:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Subscribe to notifications on the topic: <code>cache/a/wis2/{centre-id}/data/core/#</code>, where <code>{centre-id}</code> refers to the WIS2 Node designated by the Member</p>
+</li>
+<li>
+<p>Add the <strong>CCCC</strong> code designated by the Member to the Gateway&#8217;s publication <em>whitelist</em>.</p>
+</li>
+<li>
+<p>Complete configuration required in the MSS for each bulletin specified by the Member; e.g., set up the data import channel, set the cut-off time, etc.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Note</strong>: To ensure resilient operation, the Gateway should subscribe to notification messages from multiple Global Brokers.</p>
+</div>
+<div class="paragraph">
+<p><strong>Note</strong>: During the transition period, other gateways will republish GTS data to WIS2. These <em>GTS to WIS2 Gateways</em> will publish via a designated <code>centre-id</code>. To avoid an infinite loop of republication, it is essential that a WIS2 to GTS Gateway <strong>does not</strong> subscribe to notification messages associated with a centre-id of a GTS to WIS2 Gateway.</p>
+</div>
+<div class="paragraph">
+<p>For each WIS2 notification message received, the Gateway will:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Parse the notification message, discarding it if:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>The notification message is a duplicate.</p>
+</li>
+<li>
+<p>The notification message refers to data that has already been republished by the Gateway.</p>
+</li>
+<li>
+<p>The notification message does not include the <code>gts</code> property.</p>
+</li>
+<li>
+<p>The value of the <code>cccc</code> property is not on the Gateway&#8217;s publication whitelist.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If the notification message was not discarded, then:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Parse the notification message to extract the <strong>TTAAii</strong> and <strong>CCCC</strong> which identifies the bulletin that the data should be published within.</p>
+</li>
+<li>
+<p>Download the data indicated in the message, using the <em>canonical</em> link if one is specified.</p>
+</li>
+<li>
+<p>Pass the downloaded data file to the Gateway&#8217;s MSS via the channel configured for the bulletin (<strong>TTAAii</strong>, <strong>CCCC</strong>).</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Note</strong>: the WIS2 to GTS Gateway should log and report failures. [TODO: elaborate on failure reporting]</p>
+</div>
+<div class="paragraph">
+<p>The Gateway&#8217;s MSS will process incoming data files, batching individual items into bulletins as per configuration, and publish those bulletins onto the GTS for onward distributed via RTHs on the MTN and beyond.</p>
+</div>
+<div class="paragraph">
+<p>The Gateway&#8217;s MSS will publish bulletin amendments / corrections where data arrives after the cut-off time.</p>
 </div>
 </div>
 </div>
@@ -814,7 +971,7 @@ Editoral changes or other updates to the discovery metadata for changes that do 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-01-08 15:22:22 UTC
+Last updated 2024-01-08 15:24:43 UTC
 </div>
 </div>
 </body>
