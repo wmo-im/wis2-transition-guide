@@ -20,7 +20,7 @@ The gateway will be provided by Germany's Deutscher Wetterdienst (DWD) and the J
 ** e.g for DWD: ``origin/a/wis2/de-dwd-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC`` and for JMA: ``origin/a/wis2/jp-jma-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC``
 * The GTS to WIS2 data is copied on the WIS2 Global Caches if the data is WMO Core Data.
 * Each GTS to WIS2 Gateway SHALL maintain a list of TTAAii headers for Core and for Recommended data in order to be able to send the notification to the correct topic. The list is coordinated and shared between the Gateways.
-* The data_id for each GTS to WIS2 Gateway SHALL be unique. That is each gateway will choose different data ids for example by adding their center name reflecting the fact, that GTS bulletins with the same header might be different at the different locations. Therefore there will be two or more different GTS to WIS2 datasets (one for each gateway).
+* The data_id for each GTS to WIS2 Gateway SHALL be unique. That is each gateway will choose different data ids for example by adding their centre name reflecting the fact, that GTS bulletins with the same header might be different at the different locations. Therefore there will be two or more different GTS to WIS2 datasets (one for each gateway).
 * Example for a valid GTS to WIS2 data id is ``wis2/de-dwd-gts-to-wis2/data/core/W/W/X/X/60/EDZW/WWXX60EDZW200900``
 * Data Consumers receiving the GTS data through WIS2 will need to be able to handle duplicates. This is in line with the current practices of handling duplicate messages on the GTS.
 * Access to recommended GTS data should be restricted to WMO members.

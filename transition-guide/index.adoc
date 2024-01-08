@@ -39,9 +39,15 @@ include::sections/introduction.adoc[]
 
 include::sections/principles.adoc[]
 
+include::sections/pre_operational_and_operational_phases.adoc[]
+
 include::sections/gts_to_wis2_gateway.adoc[]
 
 include::sections/wis2_to_gts_gateway.adoc[]
+
+include::sections/management_of_wis1_and_gts.adoc[]
+
+include::sections/management_of_gts_ahl.adoc[]
 
 include::sections/wis1cat.adoc[]
 

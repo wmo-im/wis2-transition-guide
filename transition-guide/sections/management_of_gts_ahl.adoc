@@ -1,0 +1,12 @@
+=== Management of GTS Abbreviated Headings
+
+==== GTS during the transition phase
+
+* The GTS headers have been managed by volume C1 which has not been updated for several years
+* The latest version of Volume C1 will be published on the WMO website (TBD)
+* No new GTS header will be allocated during the transition phase
+* The volume C1 will be decommissioned by December 2024
+
+==== GTS Headings for ICAO (AFTN)
+The management of GTS headings for the International Civil Aviation Organization (ICAO) will be done in collaboration with ICAO
+Whenever a new request is made to add a new CCCC, it will first be checked against the latest ICAO and WMO Secretariat CCCC list to ensure that it is not attributed to any centre, and then the WMO Secretariat will add it and publish it on the dedicated WMO website and inform ICAO about it
