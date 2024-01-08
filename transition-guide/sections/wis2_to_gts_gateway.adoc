@@ -12,7 +12,7 @@ The purpose of this gateway is to enable GTS members who have not yet migrated t
 
 === WIS2 to GTS Gateway provider
 
-The gateway will be provided by the Regional Telecommunication Hubs (RTH)
+The gateway will be provided by dedicated Regional Telecommunication Hubs (RTH).
 
 === Technical requirements
 
