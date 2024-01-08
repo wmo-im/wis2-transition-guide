@@ -12,4 +12,7 @@ docx:
 linkcheck:
 	find . -name "???.adoc" -exec asciidoc-link-check -p -c ./asciidoc-link-check-config.json {} \;
 
-.PHONY: html pdf docx linkcheck
+clean:
+	rm -f *.html *.docx *.pdf
+
+.PHONY: html pdf docx linkcheck clean

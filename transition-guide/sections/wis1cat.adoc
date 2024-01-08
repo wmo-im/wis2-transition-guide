@@ -1,6 +1,6 @@
 == Management of the WIS1 Catalogue
 
-With the start of the pre-operational phase of WIS2, GISCs do no longer need to maintain and provide their own WIS1 Catalogue. In order to be able to decommission their copies of the Catalogue, GISCs SHALL liaise with their users and with centers in their AoR and point them to the WIS Portals of the WIS Catalogue Authorities, namely GISC Seoul and GISC Offenbach. GISC Seoul and GISC Offenbach will continue to provide WIS1 discovery metadata and the WIS1 Catalogue until the transition from GTS and WIS1 to WIS2 is advanced. ET-W2AT together with ET-OM propose to INFCOM the final date when the WIS1 Catalogue can be decomissioned in due time.
+With the start of the pre-operational phase of WIS2, GISCs do no longer need to maintain and provide their own WIS1 Catalogue. In order to be able to decommission their copies of the Catalogue, GISCs SHALL liaise with their users and with centres in their AoR and point them to the WIS Portals of the WIS Catalogue Authorities, namely GISC Seoul and GISC Offenbach. GISC Seoul and GISC Offenbach will continue to provide WIS1 discovery metadata and the WIS1 Catalogue until the transition from GTS and WIS1 to WIS2 is advanced. ET-W2AT together with ET-OM propose to INFCOM the final date when the WIS1 Catalogue can be decomissioned in due time.
 
 === Management of Metadata
 
