@@ -1,0 +1,33 @@
+== 7.	Management of WIS Centers
+=== 7.1	National Centres
+During the transition (2025-2030):
+-	Natinal Centres (NCs) will decide when to stop the GTS and WIS1, preferably before 2030, but not later than 2033.
+-	NCs shall deploy a WIS2 node, on-premises or in the cloud, to publish their data and discovery metadata, they may use one of the three options:
+o	Use a Free Open Software System (FOSS) wis2box
+o	Use a commercial solution
+o	Develop their own solution  in accordance with the technical regulations of WIS 2.0 
+-	NCs shall check that all data and metadata transmitted in WIS1 and GTS are published in WIS2 in accordance with the WCMP2
+-	NCs shall support their users to access data from WIS1 and WIS2
+-	NCs shall notify WMO when they decide to stop GTS and WIS1
+-	NCs shall run GTS/WIS1 and WIS2 in parallel for a period to ensure a smooth transition.
+
+=== 7.2	Data Collection and Production Centres 
+During the transition (2025-2030):
+-	Data Collection and Production Centres (DCPCs) will decide when to stop WIS1 system, preferably before 2030, but not later than 2033.
+-	DCPCs shall deploy a WIS2 node, on-premises or in the cloud, to publish their data and discovery metadata, they may use one of the three options:
+o	Use a Free Open Software System (FOSS) wis2box
+o	Use a commercial solution
+o	Develop their own solution
+-	DCPCs shall check that all data published in WIS1 are published in WIS2 
+-	DCPCs shall check that all discovery metadata published in WIS1 are published in WIS2 in accordance with the WCMP2
+-	DCPCs shall support their customers to access data from WIS1 and WIS2 when the migration is completed
+-	DCPCs shall notify WMO when they decide to turn off WIS1
+-	DCPCs shall run WIS1 and WIS2 in parallel for a period to ensure a smooth transition and that all their customers are served by WIS2.
+
+=== 7.3	Global Information System Centres 
+During the transition (2025-2030):
+-	Global Information System Centres (GISCs) will decide when to stop WIS1 system, preferably before 2030, but not later than 2033.
+-	To be able to decommission their WIS1 systems, GISCs shall liaise with their users and with centers in their AoR and point them to the WIS Portals of the WIS Authorities, namely GISC Seoul and GISC Offenbach. 
+-	GISC Seoul and GISC Offenbach will continue to provide WIS1 services and maintain their WIS1 Catalogues until the transition from GTS and WIS1 to WIS2 is advanced. 
+-	GISCs shall support the centres in their AoR within the implementation of WIS 2.0 and ensuring the effective operation of WIS.
+-	GISCs shall notify WMO when they decide to turn off WIS1
