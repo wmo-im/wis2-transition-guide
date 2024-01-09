@@ -1,6 +1,8 @@
-== Pre-operational and operational phases
+== Migration from GTS to WIS2
 
-=== Definition of pre-operational phase
+=== Pre-operational and operational phases
+
+==== Definition of pre-operational phase
 
 The objective of the pre-operational phase is to make the transition from the Pilot Phase to the operational phase.
 
@@ -8,7 +10,7 @@ The purpose of this phase is to verify that the WIS 2.0 implementation has been 
 
 This phase covers all activities related to the installation and integration of the WIS 2.0 components developed during the pilot phase, including the testing activities necessary to verify the integration and proper functioning of data exchange via WIS 2.0.
 
-=== How to transition from the pilot to pre-operational phase
+==== How to transition from the pilot to pre-operational phase
 
 The pilot phase aims to develop the infrastructure of WIS 2.0 and make the tests to refine the WIS 2.0 technical specifications.  The pre-operational phase is the clean-up phase to make the transition to operations.
 
@@ -21,7 +23,7 @@ The following actions are required for a smooth transition:
 * Discovery Metadata shall be prepared and published in accordance with the WMO Core Metadata Profile (WCMP2)
 * SYNOP core data shall be published hourly (minutely data not required)
 
-=== How to make the transition from the pre-operational to operational phase
+==== How to make the transition from the pre-operational to operational phase
 
 The pre-operational phase aims to ensure that all the improvements made during the pilot phase are deployed and tested. During this phase performance tests of all the WIS 2.0 components will be made and relevant adjustments will be completed to be ready for the operation.
 
