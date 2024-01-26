@@ -1,12 +1,7 @@
 === Management of GTS Abbreviated Headings
 
-==== GTS during the transition phase
-
-* The GTS headers have been managed by volume C1 which has not been updated for several years
-* The latest version of Volume C1 will be published on the WMO website (TBD)
-* No new GTS header will be allocated during the transition phase
-* The volume C1 will be decommissioned by December 2024
+The GTS abbreviate heading are described in the Manual on the Global Telecommunication System (WMO-No. 386). In particular the data designators T1T2A1A2ii are defined in Attachement II.5 of this Manual. The GTS abbreviated heading are not required in WIS 2.0 and their use is limited to the exchange of data in the GTS. Starting from WIS 2.0 operational any further evolution of the GTS, including the transmission of new data, will not be permitted. Therefore the Manual on GTS will no longer be updated from 31 December 2024. 
+The Weather Reporting (WMO-No. 9) Volume C1 contains the list of meteorological bulletins exchanged on the GTS. There is a requirement for Members to update Volume C1 every time a change in the bulletins takes place, but only a few Members are doing it with regularly and therefore the list is incomplete and is not consistent with the bulletins effectively exchanged on GTS. With the start of WIS 2.0 operational phase there will not be any change in the list of meteorological bulleting transmitted on GTS, therefore Volume C1 will not be updated any longer from 31 December 2024. 
 
 ==== GTS Headings for ICAO (AFTN)
-The management of GTS headings for the International Civil Aviation Organization (ICAO) will be done in collaboration with ICAO
-Whenever a new request is made to add a new CCCC, it will first be checked against the latest ICAO and WMO Secretariat CCCC list to ensure that it is not attributed to any centre, and then the WMO Secretariat will add it and publish it on the dedicated WMO website and inform ICAO about it
+The attachement II.5 of the Manual on GTS (WMO-No. 386) containing the data designators T1T2A1A2ii currently used for transmission of data on GTS are also used for the same purpose on AFTN by ICAO. There is a requirement for WMO to maintain the data designators for ICAO data transmission purposes. To satisfy this requirement WMO Secretariat will liase with ICAO to allow the addition of new data designators when required by ICAO. The new data designators requested by ICAO will not be published in the Manual on GTS (WMO No. 386), a different mean for their publication will be agreed by WMO and ICAO.
