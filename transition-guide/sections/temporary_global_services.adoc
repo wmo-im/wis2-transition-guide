@@ -1,4 +1,28 @@
-==  WIS2 to GTS Gateway
+== Temporary global services
+
+=== GTS to WIS2 Gateway
+
+==== Purpose
+
+==== GTS to WIS2 Gateway provider
+
+The purpose of the GTS to WIS2 gateway is to enable Members, having migrated to WIS2, to stop their GTS systems while continueing receiving GTS data via WIS2. In addition, this gateway function also enables users who are not connected to GTS to already obtain data originally published on the GTS. The function of GTS to WIS2 gateway is to forward all the GTS traffic received by the Member operating that service, to WIS2, so that data received on its Message Switching System (MSS) will be stored and made available via HTTP(S). A Notification Message is then generated. It is published using the centre-id name defined for this gateway.
+ 
+==== Technical requirements
+
+* A GTS to WIS2 gateway is a DCPC function. All requirements related to WIS2 Nodes are applicable.
+* In addition to the standard WIS2 Node specifications, the GTS to WIS2 gateway will support the following:
+** The Topic Hierarchy for GTS data on WIS2 will be:
+*** ``origin/a/wis2/{centre-id}/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC``
+*** e.g for DWD: ``origin/a/wis2/de-dwd-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC`` and for JMA: ``origin/a/wis2/jp-jma-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC``
+** The ``T1/T2/A1/A2/ii/CCCC`` above is derived from the headers of the data received on the GTS.
+* The Global Caches will cache data that is being published using ``core`` in the Topic Hierarchy.
+* Data Consumers receiving the GTS data through WIS2 will need to be able to handle duplicates. This is consistent with the current practices of handling duplicate messages on the GTS.
+* Access to recommended GTS data should be restricted to WMO members.
+
+
+=== WIS2 to GTS Gateway
+
 The WIS2 Implementation plan outlines a gradual transition of data exchange from the Global Telecommunications System (GTS) to WIS2. The transition is expected to occur between 2025 and 2030. The GTS will be decommissioned once the transition is complete.  
 
 Once a WIS centre has migrated from GTS to WIS2, subject to validation of readiness, the centre will cease to share data on the GTS. Consequently, during the transition period some data will be published on the GTS and some via WIS2. 
@@ -9,16 +33,16 @@ To remove the need for WIS centres to operate both GTS and WIS2 systems in paral
 
 To ensure resilient operation there will be more than one WIS2 to GTS Gateway.
 
-=== Purpose
+==== Purpose
 The purpose of the WIS2 to GTS Gateway is to enable Members relying on the GTS, who are yet to migrate to WIS2, to receive operational data published via WIS2 that would otherwise be unavailable on the GTS.
 
 **Note**: Only data that have been already published in GTS are concerned by this Gateway, New data will be available **only** on WIS2.
 
-=== WIS2 to GTS Gateway operators
+==== WIS2 to GTS Gateway operators
 The gateway will be provided by designated Regional Telecommunication Hubs (RTH). These RTHs are: [TODO: Add the RTHs that will each operate a WIS2-to-GTS Gateway. Provisional list is: China, UK, Brazil.] 
 
-=== Technical requirements
-==== For Data Providers
+==== Technical requirements
+===== For Data Providers
 A Member seeking to stop GTS transmission shall contact the WMO Secretariat, providing the following information:
 
 . The proposed date that GTS transmission will stop.
@@ -43,7 +67,7 @@ This is done by including the ``gts`` property in the WIS2 Notification Message 
 }
 -----
 
-==== For WIS2 to GTS Gateway operators
+===== For WIS2 to GTS Gateway operators
 A WIS2 to GTS Gateway operator shall operate the following components throughout the transition period:
 
 . A WIS2 client application to retrieve data published on WIS2.
