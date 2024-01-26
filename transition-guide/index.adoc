@@ -1,8 +1,8 @@
 :title: Draft guidance on transition from GTS to WIS2
 :titletext: {title}
 :version: 2.0.0alpha1
-:date: 2023-09-26
-:copyright: Copyright © 2023 World Meteorological Organization (WMO)
+:date: {docdate}
+:copyright: Copyright © 2024 World Meteorological Organization (WMO)
 :doctype: book
 :encoding: utf-8
 :lang: en
