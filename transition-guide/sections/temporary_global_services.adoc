@@ -30,7 +30,7 @@ The purpose of the GTS to WIS2 gateway is to enable Members, having migrated to 
 
 The WIS2 Implementation plan outlines a gradual transition of data exchange from the Global Telecommunications System (GTS) to WIS2. The transition is expected to occur between 2025 and 2030. The GTS will be decommissioned once the transition is complete.  
 
-=== Purpose
+==== Purpose
 
 Once a WIS centre has migrated from GTS to WIS2, and as defined in `How to stop the MSS ?`, a centre may want to stop sending it data directly on the GTS.
 
