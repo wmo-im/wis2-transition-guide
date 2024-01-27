@@ -32,11 +32,11 @@ The WIS2 Implementation plan outlines a gradual transition of data exchange from
 
 ==== Purpose
 
-Once a WIS centre has migrated from GTS to WIS2, it may want to stop sending its data directly on the GTS. The will require 
+Once a WIS centre has migrated from GTS to WIS2, it may want to stop sending its data directly on the GTS. This will require implementing the technical procedure described below, then when done, WMO Secretariat will coordinate the actions of the different parties to effectively allow the Member to stop the MSS. 
 
-The WIS2 to GTS gateway will ensure that *only the data currently available on the GTS* and whose provider is wishing to stop its Message Switching System (MSS) will be re-published onto the GTS. 
+The WIS2 to GTS gateway will ensure that *only the data currently available on the GTS* and whose Member is wishing to stop its Message Switching System (MSS) will be re-published onto the GTS. 
 
-To ensure resilient operation there will be more than one WIS2 to GTS Gateway.
+To ensure resilient operation, there will be more than one WIS2 to GTS Gateway.
 
 ==== WIS2 to GTS Gateway operators
 The gateway will be provided by designated Regional Telecommunication Hubs (RTH). 
@@ -75,7 +75,7 @@ A WIS2 to GTS Gateway operator shall operate the following components throughout
 
 The Gateway will: 
 
-. Subscribe to notifications on the topic: ``+cache/a/wis2/{centre-id}/data/core/#+``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function.
+. Subscribe to notifications on the topic: ``+cache/a/wis2/{centre-id}/data/#+``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function.
 
 . Add the **CCCC** code designated by the Member to the Gateway's publication __whitelist__.
 . Complete configuration required in the MSS for each bulletin specified by the Member; e.g., set up the data import channel, set the cut-off time, etc. 
