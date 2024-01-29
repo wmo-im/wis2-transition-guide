@@ -8,11 +8,10 @@ During the transition period, in order to avoid some WIS centres being forced to
 
 ==== Purpose
 
-The purpose of the GTS to WIS2 gateway is to enable members who have migrated to WIS2 and have stopped their GTS systems to continue receiving GTS data from WIS2. This gateway also enables users who are not connected to GTS to access GTS data, during the transition phase, from WIS2. The GTS to WIS2 gateway will forward all the GTS traffic it receives to WIS2, that is each bulletin received on one of its GTS channels will be stored to the HTTP(s) endpoint of the Gateway and a WIS2 Notification Message is generated which points to that bulletin file. The Notification Message is published at the GTS to WIS2 gateway topic.
+The purpose of the GTS to WIS2 gateway is to enable Members, having migrated to WIS2, to stop their GTS systems while continueing receiving GTS data via WIS2. In addition, this gateway function also enables users who are not connected to GTS to already obtain data originally published on the GTS. The function of GTS to WIS2 gateway is to forward all the GTS traffic received by the Member operating that service, to WIS2, so that data received on its Message Switching System (MSS) will be stored and made available via HTTP(S). A Notification Message is then generated. It is published using the centre-id name defined for this gateway.
 
 ==== GTS to WIS2 Gateway provider
-
-The purpose of the GTS to WIS2 gateway is to enable Members, having migrated to WIS2, to stop their GTS systems while continueing receiving GTS data via WIS2. In addition, this gateway function also enables users who are not connected to GTS to already obtain data originally published on the GTS. The function of GTS to WIS2 gateway is to forward all the GTS traffic received by the Member operating that service, to WIS2, so that data received on its Message Switching System (MSS) will be stored and made available via HTTP(S). A Notification Message is then generated. It is published using the centre-id name defined for this gateway.
+The gateway will be provided by Germany's Deutscher Wetterdienst (DWD) and the Japan Meteorological Agency (JMA).
  
 ==== Technical requirements
 
