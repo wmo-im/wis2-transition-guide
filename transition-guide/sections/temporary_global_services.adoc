@@ -24,6 +24,7 @@ The gateway will be provided by Germany's Deutscher Wetterdienst (DWD) and the J
 * The Global Caches will cache data that is being published using ``core`` in the Topic Hierarchy.
 * Data Consumers receiving the GTS data through WIS2 will need to be able to handle duplicates. This is consistent with the current practices of handling duplicate messages on the GTS.
 * Access to recommended GTS data should be restricted to WMO members.
+* Each GTS to WIS2 Gateway maintains a list of TTAAii headers for recommended data in order to be able to send the notification to the correct topic. The list is coordinated and shared between the gateway operators.
 
 === WIS2 to GTS Gateway
 
