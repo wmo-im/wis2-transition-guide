@@ -92,7 +92,7 @@ For each WIS2 notification message received, the Gateway will:
 .. Download the data indicated in the message, using the __canonical__ link if one is specified.
 .. Pass the downloaded data file to the Gateway's MSS via the channel configured for the bulletin (**TTAAii**, **CCCC**). 
 
-**Note**: the WIS2 to GTS Gateway should log and report failures. [TODO: elaborate on failure reporting]
+**Note**: the WIS2 to GTS Gateway should report events, following the agreed procedure.
 
 The Gateway's MSS will process incoming data files, batching individual items into bulletins as per configuration, and publish those bulletins onto the GTS for onward distributed via RTHs on the MTN and beyond.
 
@@ -101,7 +101,17 @@ The Gateway's MSS will publish bulletin amendments / corrections where data arri
 
 == Stopping a Message Switching System
 
-Thanks to the gateway functions described in previous chapter, all WIS Center currently using the GTS to exchange operational data, having successfully implementing a WIS2 Node with the additional features required for the gateways to provide their service, will be able to stop their Message Switching System, if they wish to do so, before the end of the complete migration.
+Thanks to the gateway functions described in previous chapter, WIS Centers currently using the GTS to exchange operational data, after having successfully implementing a WIS2 Node with the additional features required for the gateways to provide the gateway service, will be able to stop their Message Switching System, if they wish to do so, before the end of the complete migration.
 Gradually stopping all the MSS shall be done in an orderly and coordinated manner so that all data required by Members for their operations will continue to be available.
 
-"Management of WIS1 and GTS" part of this Transition Guide recalling the various roles on the GTS explain when a Center can stop their MSS.
+"Management of WIS1 and GTS" part of this Transition Guide recalls the various roles on the GTS (NMC, RTH, WMC). It also details when a Center can stop its MSS. When all the conditions for a Centre are met, the following decommissioning procedure can be applied.
+
+TODO: Include stopping MSS sequence diagram
+
+The sequence diagram details the list of actions required and the role of the various entities involved in this action.
+The responsible GISC for the WIS Center will have a key role to play. The GISC will have to ensure that the WIS Center has properly implemented the requirements and that the procedure is well understood by the WIS Center so that, no data is lost during the transition.
+WMO secretariat will act as the coordination body between all parties.
+It is crucial that all parties are strictly following the agreed procedure.
+
+It must also be noted that the final switch (stopping the MSS by the WIS Center and activating the gateway function for the data of the WIS Center) should happen at the same moment. The exact time and date will be chosen by the various parties under the control of WMO Secretariat.
+
