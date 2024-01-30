@@ -32,9 +32,9 @@ The WIS2 Implementation plan outlines a gradual transition of data exchange from
 
 ==== Purpose
 
-Once a NMC centre, running a Message Switching System and exchanging data on the GTS, has implemented WIS2, it may want to stop sending its data directly on the GTS so that it can stop their MSS. 
+When a NMC centre, running a Message Switching System and exchanging data on the GTS, has implemented WIS2, it may want to stop sending its data directly on the GTS so that it can stop the Message Switching System (MSS). 
 
-The WIS2 to GTS gateway will ensure that *only the data currently available on the GTS* and whose Member is wishing to stop its Message Switching System (MSS) will be re-published onto the GTS, so that no data is loss during the transition. 
+The WIS2 to GTS gateway will ensure that *only the data currently available on the GTS* and whose Member is wishing to stop its MSS will be re-published onto the GTS, so that no data is loss during the transition. 
 
 To ensure resilient operation, there will be more than one WIS2 to GTS Gateway.
 
@@ -43,10 +43,6 @@ The gateway will be provided by designated Regional Telecommunication Hubs (RTH)
 
 ==== Technical requirements
 ===== For WIS Centres wishing to stop their MSS
-
-. The GTS header CCCC code to be used for the bulletins published on their behalf.
-. The list of GTS bulletins, and, where appropriate, their cut-off times, to be published by the Gateway on their behalf.
-*Note* Issue #32 created on the last two points.
 
 A Member planning to stop GTS transmission shall, in addition to WIS2 Node operations, and when publishing a WIS2 Notification Message for data that should also be available on the GTS shall indicate the GTS Abbreviated Header Line (AHL) of the bulletin in which the data is to be published. 
 
@@ -63,41 +59,24 @@ This is done by including the ``gts`` property in the WIS2 Notification Message 
 }
 -----
 
+For core data, the Global Cache will ensure their normal operation and the data to be relayed onto the ``gts`` will be available on the Global Cache.
+For recommended data, WIS Center should allow unrestricted access from the gateways. They will inform WMO Secretariat, so that the gateway will establish the required subscriptions. 
+
 ===== For WIS2 to GTS Gateway operators
 A WIS2 to GTS Gateway operator shall operate the following components throughout the transition period:
 
-. A WIS2 Node to retrieve data published on WIS2. All WIS2 Node specifications apply to the WIS2 to GTS Gateway.
+. A Data Consumer to retrieve data published on WIS2. All Data Consumer specifications apply to the WIS2 to GTS Gateway.
 . A Message Switching System (MSS) with the required configuration to reach all RTHs.
+. In addition, the gateway shall implement a mechanism so that the Data Consumer part can make available the data to be sent onto the GTS with the required TTAAii and CCCC to the local MSS. The Gateway's MSS will process incoming data files, batching individual items into bulletins as per standard configuration, and publish those bulletins onto the GTS for onward distribution via RTHs on the MTN and beyond.
 
-The Gateway will: 
+The mechanism depends on local implementation choices and may defer from one gateway to another.
 
-. Subscribe to notifications on the topic: ``+cache/a/wis2/{centre-id}/data/#+``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function.
+Over the transition period, the list of TTAAii/CCCC to relay from WIS2 to GTS will grow when new NMC plan to stop their MSS.
+It means, that the gateway will require a methof to allow the addition of batches of TTAAii/CCCC when new Centres are ready for the transition.
 
-. Add the **CCCC** code designated by the Member to the Gateway's publication __whitelist__.
-. Complete configuration required in the MSS for each bulletin specified by the Member; e.g., set up the data import channel, set the cut-off time, etc. 
-*Note* See Issue #32
+As it is expected for Data Consumers, and to ensure resilient operation, the Gateway should subscribe to notification messages from multiple Global Brokers.
 
-* To ensure resilient operation, the Gateway should subscribe to notification messages from multiple Global Brokers.
-* During the transition period, other gateways will republish GTS data to WIS2. These __GTS to WIS2 Gateways__ will publish via a designated ``centre-id``. To avoid an infinite loop of republication, it is essential that a WIS2 to GTS Gateway **does not** subscribe to notification messages associated with a centre-id of a GTS to WIS2 Gateway.
-
-For each WIS2 notification message received, the Gateway will:
-
-. Parse the notification message, discarding it if:
-.. The notification message is a duplicate.
-.. The notification message refers to data that has already been republished by the Gateway.
-.. The notification message does not include the ``gts`` property.
-.. The value of the ``cccc`` property is not on the Gateway's publication whitelist.
-. If the notification message was not discarded, then:
-.. Parse the notification message to extract the **TTAAii** and **CCCC** which identifies the bulletin that the data should be published within.
-.. Download the data indicated in the message, using the __canonical__ link if one is specified.
-.. Pass the downloaded data file to the Gateway's MSS via the channel configured for the bulletin (**TTAAii**, **CCCC**). 
-
-**Note**: the WIS2 to GTS Gateway should report events, following the agreed procedure.
-
-The Gateway's MSS will process incoming data files, batching individual items into bulletins as per configuration, and publish those bulletins onto the GTS for onward distributed via RTHs on the MTN and beyond.
-
-The Gateway's MSS will publish bulletin amendments / corrections where data arrives after the cut-off time.
-*Note* See Issue #32
+During the transition period, other gateways will republish GTS data to WIS2. These __GTS to WIS2 Gateways__ will publish via a designated ``centre-id``. To avoid an infinite loop of republication, it is essential that a WIS2 to GTS Gateway **does not** subscribe to notification messages associated with a centre-id of a GTS to WIS2 Gateway.
 
 == Stopping a Message Switching System
 
@@ -109,9 +88,14 @@ Gradually stopping all the MSS shall be done in an orderly and coordinated manne
 TODO: Include stopping MSS sequence diagram
 
 The sequence diagram details the list of actions required and the role of the various entities involved in this action.
-The responsible GISC for the WIS Center will have a key role to play. The GISC will have to ensure that the WIS Center has properly implemented the requirements and that the procedure is well understood by the WIS Center so that, no data is lost during the transition.
+*The responsible GISC for the Center will have a key role to play.* The GISC will have to ensure that the Center has properly implemented the requirements and that the procedure is well understood by the Center so that, no data is lost during the transition.
 WMO secretariat will act as the coordination body between all parties.
-It is crucial that all parties are strictly following the agreed procedure.
+It is crucial that all parties to strictly follow the agreed procedure.
 
-It must also be noted that the final switch (stopping the MSS by the WIS Center and activating the gateway function for the data of the WIS Center) should happen at the same moment. The exact time and date will be chosen by the various parties under the control of WMO Secretariat.
+It must also be noted that the final switch (stopping the MSS by the Center and activating the gateway function for the TTAAii/CCCC of the WIS Center) will happen at the same moment. The exact time and date will be chosen by the various parties under the control of WMO Secretariat.
 
+Upon request by a Center, WMO Secretariat will inform the gateways when a new ``centre-id`` wishes to use the relay function as well as the required subscription topics. When requested by WMO Secretariat, the gateway will implement the following subscriptions: 
+. Subscribe to notifications on the topic: ``+cache/a/wis2/{centre-id}/data/#+``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function. 
+. Potentially subscribe to  ``+origin/a/wis2/{centre-id}/data/recommended/#+`` for the WIS2 Node having also recommended data on the GTS
+
+*Important* Subscribing to these topics shouldn't imply pushing the data onto the ``gts`` immediately. Making the data available on the ``gts`` will require the explicit approval from WMO Secretariat. It is up to the gateway operators to implement this "kill switch" (eg. disabling the subscription, blocking the flow between the Data Consumer and the MSS for those TTAAii/CCCC only, ...)
