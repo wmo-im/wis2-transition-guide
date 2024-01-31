@@ -60,7 +60,7 @@ This is done by including the ``gts`` property in the WIS2 Notification Message 
 -----
 
 For core data, the Global Cache will ensure their normal operation and the data to be relayed onto the ``gts`` will be available on the Global Cache.
-For recommended data, WIS Center should allow unrestricted access from the gateways. They will inform WMO Secretariat, so that the gateway will establish the required subscriptions. 
+For recommended data, WIS Centre should allow unrestricted access from the gateways. They will inform WMO Secretariat, so that the gateway will establish the required subscriptions. 
 
 ===== For WIS2 to GTS Gateway operators
 A WIS2 to GTS Gateway operator shall operate the following components throughout the transition period:
@@ -80,7 +80,7 @@ During the transition period, other gateways will republish GTS data to WIS2. Th
 
 == Stopping a Message Switching System
 
-Thanks to the gateway functions described in previous chapter, WIS Centers currently using the GTS to exchange operational data, after having successfully implementing a WIS2 Node with the additional features required for the gateways to provide the gateway service, will be able to stop their Message Switching System, if they wish to do so, before the end of the complete migration.
+Thanks to the gateway functions described in previous chapter, WIS Centres currently using the GTS to exchange operational data, after having successfully implementing a WIS2 Node with the additional features required for the gateways to provide the gateway service, will be able to stop their Message Switching System, if they wish to do so, before the end of the complete migration.
 Gradually stopping all the MSS shall be done in an orderly and coordinated manner so that all data required by Members for their operations will continue to be available.
 
 The "Management of WIS1 and GTS" section of this Transition Guide recalls the various roles on the GTS (NMC, RTH, WMC). It also details when a Centre can stop its MSS. When all the conditions for a Centre are met, the following decommissioning procedure can be applied.
@@ -89,13 +89,13 @@ The "Management of WIS1 and GTS" section of this Transition Guide recalls the va
 image::images/stopping-mss.png[MSS decommissiong procedure]
 
 The sequence diagram details the list of actions required and the role of the various entities involved in this action.
-*The responsible GISC for the Center will have a key role to play.* The GISC will have to ensure that the Center has properly implemented the requirements and that the procedure is well understood by the Center so that, no data is lost during the transition.
+*The responsible GISC for the Centre will have a key role to play.* The GISC will have to ensure that the Centre has properly implemented the requirements and that the procedure is well understood by the Centre so that, no data is lost during the transition.
 WMO secretariat will act as the coordination body between all parties.
 It is crucial that all parties to strictly follow the agreed procedure.
 
-It must also be noted that the final switch (stopping the MSS by the Center and activating the gateway function for the TTAAii/CCCC of the WIS Center) will happen at the same moment. The exact time and date will be chosen by the various parties under the control of WMO Secretariat.
+It must also be noted that the final switch (stopping the MSS by the Centre and activating the gateway function for the TTAAii/CCCC of the WIS Centre) will happen at the same moment. The exact time and date will be chosen by the various parties under the control of WMO Secretariat.
 
-Upon request by a Center, WMO Secretariat will inform the gateways when a new ``centre-id`` wishes to use the relay function as well as the required subscription topics. When requested by WMO Secretariat, the gateway will implement the following subscriptions: 
+Upon request by a Centre, WMO Secretariat will inform the gateways when a new ``centre-id`` wishes to use the relay function as well as the required subscription topics. When requested by WMO Secretariat, the gateway will implement the following subscriptions: 
 . Subscribe to notifications on the topic: ``+cache/a/wis2/{centre-id}/data/#+``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function. 
 . Potentially subscribe to  ``+origin/a/wis2/{centre-id}/data/recommended/#+`` for the WIS2 Node having also recommended data on the GTS
 
