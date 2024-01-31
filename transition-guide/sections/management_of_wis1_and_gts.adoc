@@ -28,5 +28,8 @@ Note: this Notification Message update will concern only data that are already p
 
 === Maintenance and operation of WIS1 Catalogue and Cache by GISCs
 
-Each GISC shall maintain their Catalog and Cache as long as WIS Users are using their services for operations. GISC are invited to help users migrating to WIS2. When having succesfully migrated users to WIS2, GISC may stop their WIS1 Cache and Catalogue service and shall inform WMO Secretariat.
+Each GISC shall maintain their Catalog and Cache as long as WIS Users are using their services for operations. GISC are invited to help users migrating to WIS2. When having succesfully migrated its users to WIS2, GISC may stop their WIS1 Cache and Catalogue service and shall inform WMO Secretariat.
 
+GISC Seoul and GISC Offenbach will continue to provide WIS1 discovery metadata and the WIS1 Catalogue until the transition from GTS and WIS1 to WIS2 is completed or deemed unnecessary when all WIS1 users have migrated to WIS2.
+
+Neither new discovery metadata nor changes on existing metadata will be allowed in the WIS1 Catalogue from 2025 onwards. New data will only be added in WCMP2 to the Global Discovery Catalogue for WIS2. A change in an existing metadata record in WIS1 will imply the migration of the metadata record, following the WCMP2 standard and good practices, to WIS2.
