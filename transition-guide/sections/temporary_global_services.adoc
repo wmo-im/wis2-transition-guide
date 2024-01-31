@@ -83,9 +83,10 @@ During the transition period, other gateways will republish GTS data to WIS2. Th
 Thanks to the gateway functions described in previous chapter, WIS Centers currently using the GTS to exchange operational data, after having successfully implementing a WIS2 Node with the additional features required for the gateways to provide the gateway service, will be able to stop their Message Switching System, if they wish to do so, before the end of the complete migration.
 Gradually stopping all the MSS shall be done in an orderly and coordinated manner so that all data required by Members for their operations will continue to be available.
 
-"Management of WIS1 and GTS" part of this Transition Guide recalls the various roles on the GTS (NMC, RTH, WMC). It also details when a Center can stop its MSS. When all the conditions for a Centre are met, the following decommissioning procedure can be applied.
+The "Management of WIS1 and GTS" section of this Transition Guide recalls the various roles on the GTS (NMC, RTH, WMC). It also details when a Centre can stop its MSS. When all the conditions for a Centre are met, the following decommissioning procedure can be applied.
 
-TODO: Include stopping MSS sequence diagram
+.MSS decommissiong procedure
+image::images/stopping-mss.png[MSS decommissiong procedure]
 
 The sequence diagram details the list of actions required and the role of the various entities involved in this action.
 *The responsible GISC for the Center will have a key role to play.* The GISC will have to ensure that the Center has properly implemented the requirements and that the procedure is well understood by the Center so that, no data is lost during the transition.
