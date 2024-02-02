@@ -49,6 +49,4 @@ include::sections/management_of_gts_ahl.adoc[]
 
 include::sections/management_of_wis_centres.adoc[]
 
-include::sections/wis1cat.adoc[]
-
 include::sections/references.adoc[]
