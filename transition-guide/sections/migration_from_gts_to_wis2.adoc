@@ -10,9 +10,9 @@ The purpose of this phase is to verify that the WIS 2.0 implementation has been 
 
 This phase covers all activities related to the installation and integration of the WIS 2.0 components developed during the pilot phase, including the testing activities necessary to verify the integration and proper functioning of data exchange via WIS 2.0.
 
-==== How to transition from the pilot to pre-operational phase
+==== Requirements for the pre-operational phase
 
-The pilot phase aims to develop the infrastructure of WIS 2.0 and make the tests to refine the WIS 2.0 technical specifications.  The pre-operational phase is the clean-up phase to make the transition to operations.
+During the pilot phase in 2023 the infrastructure of WIS 2.0 was developed and tests to refine the WIS 2.0 technical specifications have been carried out.  The pre-operational phase is the clean-up phase to make the transition to operations.
 
 The following actions are required for a smooth transition:
 
@@ -39,6 +39,6 @@ The following actions shall be completed for a smooth transition from the pre-op
 ** Customer services support
 ** Incident management
 ** Monitoring
-* Business continuity and disaster recovery: plans must be in place to ensure that, in the event of failure, the business can continue or, in the worst case, recover within the required time scale from any significant disaster. This might include:
+* Business continuity and disaster recovery plans must be in place to ensure that, in the event of failure, the business can continue or, in the worst case, recover within the required time scale from any significant disaster. This might include:
 ** provision for offsite backup 
 ** Supply of an identical replacement system within a specified time

@@ -11,22 +11,22 @@ During the migration to WIS2, the Main Telecommunication Network (MTN), linking 
 
 ==== Regional Telecommunication Hubs
 
-Regional Telecommunication Hubs (RTHs) shall keep their Message Switching Systems (MSS) up and continue to publish data Collecting the bulletins from their associated National Meteorological Centres (NMCs) and transmitting them in the appropriate form on the Main Telecommunication Network (MTN), either directly or through the appropriate WMC/RTH in GTS until all Members in their area of responsability migrate from GTS to WIS2.
+Regional Telecommunication Hubs (RTHs) shall keep their Message Switching Systems (MSS) up and continue to publish data Collecting the bulletins from their associated National Meteorological Centres (NMCs) and transmitting them in the appropriate form on the Main Telecommunication Network (MTN), either directly or through the appropriate WMC/RTH in GTS until all Members in their area of responsibility migrate from GTS to WIS2.
 
 When Regional Telecommunication Hubs (RTHs) have migrated to WIS2 Node and all Members in their area of responsibility (AoR) have migrated to WIS2, RTHs may decide to turn off their message switching system (MSS). 
 
-In this case, they will follow the procedure described in xxx.
+In this case, they will follow the procedure described in xxx (TODO: Crossref).
 
 ==== National Meteorological Centres
 
 National Meteorological Centres (NMCs) shall operate a WIS2 Node to share their data and discovery metadata in WIS2.
 
-NMCs that have implemented a WIS2 Node, and published all the data transmitted in the GTS on WIS2 can, if they wish, turn off their GTS system MSS and stop transmitting data in the GTS. 
-When NMCs decide to decommission and turn off their GTS system MSS and stop transmitting their data in GTS, they shall include the GTS properties in the Notification Message as described in the WIS2 to GTS gateway technical requirements.
+NMCs that have implemented a WIS2 Node, and published all the data transmitted on the GTS on WIS2 can, if they wish, turn off their GTS system MSS and stop transmitting data on the GTS. 
+When NMCs decide to decommission and turn off their GTS system MSS and stop transmitting their data on GTS, they shall include the GTS properties in the Notification Message as described in the WIS2 to GTS gateway technical requirements.
 
 Note: this Notification Message update will concern only data that are already published in GTS. New data will be published only on WIS2.
 
 === Maintenance and operation of WIS1 Catalogue and Cache by GISCs
 
-Each GISC shall maintain their Catalog and Cache as long as WIS Users are using their services for operations. GISC are invited to help users migrating to WIS2. When having succesfully migrated users to WIS2, GISC may stop their WIS1 Cache and Catalogue service and shall inform WMO Secretariat.
+Each GISC shall maintain their Catalog and Cache as long as WIS Users are using their services for operations. GISCs are invited to help users migrating to WIS2. When having succesfully migrated users to WIS2, GISCs may stop their WIS1 Cache and Catalogue service and shall inform WMO Secretariat.
 
