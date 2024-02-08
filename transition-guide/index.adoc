@@ -1,6 +1,6 @@
 :title: Draft guidance on transition from GTS to WIS2
 :titletext: {title}
-:version: 2.0.0alpha1
+:version: 2024-02-05
 :date: {docdate}
 :copyright: Copyright © 2024 World Meteorological Organization (WMO)
 :doctype: book
@@ -48,7 +48,5 @@ include::sections/management_of_wis1_and_gts.adoc[]
 include::sections/management_of_gts_ahl.adoc[]
 
 include::sections/management_of_wis_centres.adoc[]
-
-include::sections/wis1cat.adoc[]
 
 include::sections/references.adoc[]
