@@ -89,8 +89,8 @@ Gradually stopping all the MSS shall be done in an orderly and coordinated manne
 
 The "Management of WIS1 and GTS" section of this Transition Guide recalls the various roles on the GTS (NMC, RTH, WMC). It also details when a Centre can stop its MSS. When all the conditions for a Centre are met, the following decommissioning procedure can be applied.
 
-.MSS decommissiong procedure
-image::images/stopping-mss.png[MSS decommissiong procedure]
+.MSS decommissioning procedure
+image::images/stopping-mss.png[MSS decommissioning procedure]
 
 The sequence diagram details the list of actions required and the role of the various entities involved in this action.
 *The responsible GISC for the Centre will have a key role to play.* The GISC will have to ensure that the Centre has properly implemented the requirements and that the procedure is well understood by the Centre so that, no data is lost during the transition.
