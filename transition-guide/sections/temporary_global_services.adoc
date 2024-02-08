@@ -99,7 +99,8 @@ It is crucial that all parties to strictly follow the agreed procedure.
 
 It must also be noted that the final switch (stopping the MSS by the Centre and activating the gateway function for the TTAAii/CCCC of the WIS Centre) will happen at the same moment. The exact time and date will be chosen by the various parties under the control of WMO Secretariat.
 
-Upon request by a Centre, WMO Secretariat will inform the gateways when a new ``centre-id`` wishes to use the relay function as well as the required subscription topics. When requested by WMO Secretariat, the gateway will implement the following subscriptions: 
-. Subscribe to notifications on the topic: ``+cache/a/wis2/{centre-id}/data/#+``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function. Potentially subscribe to  ``+origin/a/wis2/{centre-id}/data/recommended/#+`` for the WIS2 Node having also recommended data on the GTS.
+Upon request by a Centre, WMO Secretariat will inform the gateways when a new ``centre-id`` wishes to use the relay function as well as the required subscription topics. When requested by WMO Secretariat, the gateway will implement the following subscriptions:
+. Subscribe to notifications on the topic: ``+cache/a/wis2/{centre-id}/data/#+``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function. 
+. Potentially subscribe to  ``+origin/a/wis2/{centre-id}/data/recommended/#+`` for the WIS2 Node having also recommended data on the GTS.
 
 *Important* Subscribing to these topics shouldn't imply pushing the data onto the ``gts`` immediately. Making the data available on the ``gts`` will require the explicit approval from WMO Secretariat. It is up to the gateway operators to implement this "kill switch" (eg. disabling the subscription, blocking the flow between the Data Consumer and the MSS for those TTAAii/CCCC only, ...)
