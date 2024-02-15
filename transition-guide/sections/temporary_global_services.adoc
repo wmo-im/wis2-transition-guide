@@ -44,9 +44,13 @@ The gateway will be provided by designated Regional Telecommunication Hubs (RTH)
 ==== Technical requirements
 ===== For WIS Centres wishing to stop their MSS
 
-A Member planning to stop GTS transmission shall, in addition to WIS2 Node operations, and when publishing a WIS2 Notification Message for data that should also be available on the GTS shall indicate the GTS Abbreviated Header Line (AHL) of the bulletin in which the data is to be published. 
+A Member planning to stop GTS transmission shall
+* provide their data in conformance with WIS2 Node operations on WIS2
+* for data that has previously been available on the GTS and that should continue to be available on the GTS
+** indicate the GTS Abbreviated Header Line (AHL) of the bulletin in which the data is to be published.
+** this is done by including the ``gts`` property in the WIS2 Notification Message (see example below). 
 
-This is done by including the ``gts`` property in the WIS2 Notification Message (see example below). This enables the WIS2 to GTS Gateway operator to easily identify data for republication on the GTS and the AHL of the associated data.
+The ``gts`` property enables the WIS2 to GTS Gateway operator to easily identify data for republication on the GTS and the AHL of the associated data.
   
 [source,json]
 -----
@@ -85,8 +89,8 @@ Gradually stopping all the MSS shall be done in an orderly and coordinated manne
 
 The "Management of WIS1 and GTS" section of this Transition Guide recalls the various roles on the GTS (NMC, RTH, WMC). It also details when a Centre can stop its MSS. When all the conditions for a Centre are met, the following decommissioning procedure can be applied.
 
-.MSS decommissiong procedure
-image::images/stopping-mss.png[MSS decommissiong procedure]
+.MSS decommissioning procedure
+image::images/stopping-mss.png[MSS decommissioning procedure]
 
 The sequence diagram details the list of actions required and the role of the various entities involved in this action.
 *The responsible GISC for the Centre will have a key role to play.* The GISC will have to ensure that the Centre has properly implemented the requirements and that the procedure is well understood by the Centre so that, no data is lost during the transition.
@@ -95,8 +99,9 @@ It is crucial that all parties to strictly follow the agreed procedure.
 
 It must also be noted that the final switch (stopping the MSS by the Centre and activating the gateway function for the TTAAii/CCCC of the WIS Centre) will happen at the same moment. The exact time and date will be chosen by the various parties under the control of WMO Secretariat.
 
-Upon request by a Centre, WMO Secretariat will inform the gateways when a new ``centre-id`` wishes to use the relay function as well as the required subscription topics. When requested by WMO Secretariat, the gateway will implement the following subscriptions: 
+Upon request by a Centre, WMO Secretariat will inform the gateways when a new ``centre-id`` wishes to use the relay function as well as the required subscription topics. When requested by WMO Secretariat, the gateway will implement the following subscriptions:
+
 . Subscribe to notifications on the topic: ``+cache/a/wis2/{centre-id}/data/#+``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function. 
-. Potentially subscribe to  ``+origin/a/wis2/{centre-id}/data/recommended/#+`` for the WIS2 Node having also recommended data on the GTS
+. Potentially subscribe to  ``+origin/a/wis2/{centre-id}/data/recommended/#+`` for the WIS2 Node having also recommended data on the GTS.
 
 *Important* Subscribing to these topics shouldn't imply pushing the data onto the ``gts`` immediately. Making the data available on the ``gts`` will require the explicit approval from WMO Secretariat. It is up to the gateway operators to implement this "kill switch" (eg. disabling the subscription, blocking the flow between the Data Consumer and the MSS for those TTAAii/CCCC only, ...)
