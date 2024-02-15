@@ -76,7 +76,7 @@ A WIS2 to GTS Gateway operator shall operate the following components throughout
 The mechanism depends on local implementation choices and may defer from one gateway to another.
 
 Over the transition period, the list of TTAAii/CCCC to relay from WIS2 to GTS will grow when new NMC plan to stop their MSS.
-It means, that the gateway will require a methof to allow the addition of batches of TTAAii/CCCC when new Centres are ready for the transition.
+It means, that the gateway will require a method to allow the addition of batches of TTAAii/CCCC when new Centres are ready for the transition.
 
 As it is expected for Data Consumers, and to ensure resilient operation, the Gateway should subscribe to notification messages from multiple Global Brokers.
 
