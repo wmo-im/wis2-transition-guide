@@ -39,8 +39,6 @@ include::sections/wis2_implementation_plan.adoc[]
 
 include::sections/principles.adoc[]
 
-include::sections/migration_from_gts_to_wis2.adoc[]
-
 include::sections/temporary_global_services.adoc[]
 
 include::sections/management_of_wis1_and_gts.adoc[]
