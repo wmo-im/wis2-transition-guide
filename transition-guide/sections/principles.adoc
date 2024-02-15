@@ -5,7 +5,7 @@ The following principles are appropriate for the transition:
 
 **Principle **1: Each NMHS will be able to make the migration during the agreed period 2025-2030:
 
-* Considering the fact that not all centres have the same skills and facilities, and the operational aspects of WIS and the risks involved in a big-bang approach, the WIS node implementation would not be fully implemented at the same time
+* NMHSs will migrate between 2025 and 2030 at a time convenient for them. There will not be a simultaneous migration of all the WIS Centers from WIS1 to WIS2.
 
 **Principle 2**: No GTS data loss during the transition:
 
@@ -13,7 +13,7 @@ The following principles are appropriate for the transition:
 
 **Principle 3**: Each Centre will decide when decommissioning the WIS1 and GTS:
 
-* Decommissioning WIS1 services, as well as GTS ones, will be the decision of each NC/DCPC/GISC when they will consider that their and their user’s migration is completed
+* Decommissioning WIS1 and GTS services will be the decision of each NC/DCPC/GISC when they will consider that the migration is complete for them and their users.
 * After migration to WIS2, It is not required to run an MSS to receive or send data from Centres not having made the transition. The Centre will decide when and if they want to stop their Message Switching System MSS. They can also stop the data dissemination to GTS
 
 **Principle 4**: New data (eg. GBON, Climate, Hydrology, Cryosphere) will be exchanged solely on WIS2:
