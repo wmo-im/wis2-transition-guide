@@ -9,7 +9,7 @@ The following principles are appropriate for the transition:
 
 **Principle 2**: No GTS data loss during the transition:
 
-* During the pilot phase, and in coordination with the regional associations and GISCs, WIS2 infrastructure will be established in order to avoid data loss during the transition. The aim of this infrastructure is to ensure that data sent on the GTS can be received by a site having migrated on WIS2, and data, previously sent on the GTS, sent on WIS2 can be received by a site still on the GTS
+* During the pre-operational phase, and in coordination with the regional associations and GISCs, WIS2 infrastructure will be established in order to avoid data loss during the transition. The aim of this infrastructure is to ensure that data sent on the GTS can be received by a site having migrated on WIS2, and data, previously sent on the GTS, sent on WIS2 can be received by a site still on the GTS
 
 **Principle 3**: Each Centre will decide when decommissioning the WIS1 and GTS:
 
