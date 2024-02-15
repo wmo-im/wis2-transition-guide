@@ -16,8 +16,8 @@ During the pilot phase in 2023 the infrastructure of WIS 2.0 was developed and t
 
 The following actions are required for a smooth transition:
 
-* software adopted to run a WIS 2.0 Node shall be compliant with WIS 2.0 technical regulations
-* WIS 2.0 node details shall be communicated to the WMO Secretariat
+* software adopted to run a WIS2 node shall be compliant with WIS 2.0 technical regulations
+* WIS2 node details shall be communicated to the WMO Secretariat
 * the WIS 2.0 Topic Hierarchy shall be updated to the latest approved version
 * All data transmitted in GTS shall be published in WIS 2.0
 * Discovery Metadata shall be prepared and published in accordance with the WMO Core Metadata Profile (WCMP2)
