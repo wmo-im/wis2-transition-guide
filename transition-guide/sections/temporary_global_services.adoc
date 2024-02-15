@@ -2,7 +2,7 @@
 
 === GTS to WIS2 Gateway
 
-The Executive Council, with resolution 34 (EC-76), endorsed the WMO Information System 2 (WIS2) implementation plan and recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it in order to be ready for a preoperational phase in 2024, and then for the transition starting on 2025. According to the WIS2 implementation plan, the Global Telecommunication System (GTS) will be decommissioned by 2030, and National Meteorological and Hydrological Services NMHSs will use the WIS2 platform for data exchange.
+The Executive Council, with resolution 34 (EC-76), endorsed the WMO Information System 2 (WIS2) implementation plan and recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it in order to be ready for a preoperational phase in 2024, and then for the transition starting on 2025. According to the WIS2 implementation plan, the Global Telecommunication System (GTS) will be decommissioned by 2033, and National Meteorological and Hydrological Services NMHSs will use the WIS2 platform for data exchange.
 
 During the transition period, in order to avoid some WIS centres being forced to run both data-sharing frameworks WIS2 and GTS simultaneously, with the challenges associated with maintaining two operational systems for the same purpose, a gateway from GTS to WIS2 is designed, taking into account the time required for Members to migrate to the new systems and minimizing the time a member has to operate both systems in parallel.
 
@@ -77,7 +77,7 @@ A WIS2 to GTS Gateway operator shall operate the following components throughout
 The mechanism depends on local implementation choices and may defer from one gateway to another.
 
 Over the transition period, the list of TTAAii/CCCC to relay from WIS2 to GTS will grow when new NMC plan to stop their MSS.
-It means, that the gateway will require a methof to allow the addition of batches of TTAAii/CCCC when new Centres are ready for the transition.
+It means, that the gateway will require a method to allow the addition of batches of TTAAii/CCCC when new Centres are ready for the transition.
 
 As it is expected for Data Consumers, and to ensure resilient operation, the Gateway should subscribe to notification messages from multiple Global Brokers.
 
