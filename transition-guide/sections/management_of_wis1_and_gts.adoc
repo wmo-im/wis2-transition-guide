@@ -15,7 +15,7 @@ Regional Telecommunication Hubs (RTHs) shall keep their Message Switching System
 
 When Regional Telecommunication Hubs (RTHs) have migrated to WIS2 Node and all Members in their area of responsibility (AoR) have migrated to WIS2, RTHs may decide to turn off their message switching system (MSS). 
 
-In this case, they will follow the procedure described in xxx (TODO: Crossref).
+In this case, they will follow the procedure described in xxx.
 
 ==== National Meteorological Centres
 
@@ -28,7 +28,7 @@ Note: this Notification Message update will concern only data that are already p
 
 === Maintenance and operation of WIS1 Catalogue and Cache by GISCs
 
-Each GISC shall maintain their Catalog and Cache as long as WIS Users are using their services for operations. GISCs are invited to help users migrating to WIS2. When having succesfully migrated its users to WIS2, GISCs may stop their WIS1 Cache and Catalogue service and shall inform WMO Secretariat.
+Each GISC shall maintain their Catalogue and Cache as long as WIS Users are using their services for operations. GISCs are invited to help users migrating to WIS2. When having succesfully migrated its users to WIS2, GISCs may stop their WIS1 Cache and Catalogue service and shall inform WMO Secretariat.
 
 GISC Seoul and GISC Offenbach will continue to provide WIS1 discovery metadata and the WIS1 Catalogue until the transition from GTS and WIS1 to WIS2 is completed or deemed unnecessary when all WIS1 users have migrated to WIS2.
 
