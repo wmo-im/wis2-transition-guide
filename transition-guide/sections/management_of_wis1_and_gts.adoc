@@ -15,7 +15,7 @@ Regional Telecommunication Hubs (RTHs) shall keep their Message Switching System
 
 When Regional Telecommunication Hubs (RTHs) have migrated to WIS2 Node and all Members in their area of responsibility (AoR) have migrated to WIS2, RTHs may decide to turn off their message switching system (MSS). 
 
-In this case, they will follow the procedure described in xxx.
+In this case, they should contact the WMO Secretariat to find out who is responsible for coordinating the switch-off of the MSS.
 
 ==== National Meteorological Centres
 
