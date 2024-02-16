@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-16T11:30:01.105Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="wCvzWyBd0BP69SI4xylQ" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-16T11:31:28.871Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="4UUmLFWRzKQg7_xR4xMO" version="23.1.5" type="github">
   <diagram name="Page-1" id="oZ63qkJXuvSa72ImsTO5">
     <mxGraphModel dx="3809" dy="1682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="3.5" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -143,13 +143,14 @@
             <mxPoint x="1570.4135294117648" y="1440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OQUS06HyzIC1bEEYyVjX-107" value="Download data." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;fontFamily=Verdana;fontSize=14;spacingTop=2;spacingBottom=7;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-107" value="Download Core data." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;fontFamily=Verdana;fontSize=14;spacingTop=2;spacingBottom=7;" parent="1" edge="1">
+          <mxGeometry x="0.0013" relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="870.5899999999999" y="1470" />
             </Array>
             <mxPoint x="1249.59" y="1470" as="sourcePoint" />
             <mxPoint x="610.4135294117649" y="1470" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OQUS06HyzIC1bEEYyVjX-108" value="Test message received,&#xa;download data succesful,&#xa;test data sent on the GTS. All good !" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontFamily=Verdana;fontSize=14;spacingTop=2;spacingBottom=7;strokeWidth=2;" parent="1" edge="1">
@@ -298,7 +299,7 @@
             <mxPoint x="1889.87" y="1060.0500000000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OQUS06HyzIC1bEEYyVjX-125" value="If the WIS2 Notification Message received&lt;br&gt;included the GTS migration properties&lt;br&gt;as defined in the WIS2 Transition Guide&lt;br&gt;the WIS2 to GTS gateway will download the data&lt;br&gt;from the Global Cache (or directly from Centre for recommended data) and will send the data &lt;br&gt; to the local MSS." style="fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=14;fontFamily=Verdana;whiteSpace=wrap;html=1;spacingBottom=2;spacingTop=2;rounded=1;" parent="1" vertex="1">
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-125" value="If the WIS2 Notification Message received&lt;br&gt;included the GTS migration properties&lt;br&gt;as defined in the WIS2 Transition Guide&lt;br&gt;the WIS2 to GTS gateway will download the data&lt;br&gt;from the Global Cache and will send the data &lt;br&gt; to the local MSS." style="fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=14;fontFamily=Verdana;whiteSpace=wrap;html=1;spacingBottom=2;spacingTop=2;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="880" y="1200" width="400" height="140" as="geometry" />
         </mxCell>
         <mxCell id="OQUS06HyzIC1bEEYyVjX-126" value="WIS2 to GTS Gateway MUST disable the gateway for Centre. This is to avoid having duplicates on the GTS. The WIS2 to GTS Gateway MUST wait WMO Secretariat signal to effectively send data on the GTS." style="fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontFamily=Verdana;fontSize=14;whiteSpace=wrap;html=1;spacingTop=2;spacingBottom=2;rounded=1;" parent="1" vertex="1">
