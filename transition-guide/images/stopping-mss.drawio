@@ -1,0 +1,324 @@
+<mxfile host="Electron" modified="2024-02-16T08:11:01.985Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="L5vtfqKdEqniqUazYdx9" version="22.1.2" type="device">
+  <diagram name="Page-1" id="oZ63qkJXuvSa72ImsTO5">
+    <mxGraphModel dx="2593" dy="1584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="3.5" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-85" value="GlobalCaches" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontFamily=Verdana;fontSize=14;fontStyle=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="80" width="200" height="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-87" value="WIS2 to GTS Gateway" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=14;fontStyle=1;fontFamily=Verdana;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1150" y="80" width="200" height="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-88" value="WMO Secretariat" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=14;fontStyle=1;fontFamily=Verdana;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1470" y="80" width="200" height="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-89" value="Centre" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontFamily=Verdana;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;strokeWidth=2;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1790" y="80" width="200" height="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-90" value="GISC" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=14;fontStyle=1;fontFamily=Verdana;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="2110" y="80" width="200" height="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-91" value="My organisation would like to stop our MSS." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;fontFamily=Verdana;fontSize=14;html=1;spacingBottom=7;spacingTop=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1729.59" y="190" />
+            </Array>
+            <mxPoint x="1889.5899999999997" y="190" as="sourcePoint" />
+            <mxPoint x="1570.4135294117648" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-92" value="OK. Let me inform your GISC." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;strokeWidth=2;html=1;spacingBottom=7;spacingTop=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1570.4135294117648" y="320.47" as="sourcePoint" />
+            <mxPoint x="1889.5899999999997" y="320.47" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-93" value="Centre is ready to switch off their MSS&lt;br&gt;Can you check if everything is correct ?" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;strokeWidth=2;html=1;spacingBottom=5;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1803.8400000000001" y="380" />
+            </Array>
+            <mxPoint x="1570.1635294117648" y="380" as="sourcePoint" />
+            <mxPoint x="2209.84" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-94" value="Can we check your compliance with the transition specifications?" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;strokeWidth=2;spacingTop=2;spacingBottom=7;fontFamily=Verdana;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2090.84" y="430" />
+            </Array>
+            <mxPoint x="2209.84" y="430" as="sourcePoint" />
+            <mxPoint x="1890.163529411765" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-95" value="Can you publish some test messages including the additional properties" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;spacingBottom=7;spacingTop=2;html=1;strokeWidth=2;fontFamily=Verdana;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2090.84" y="570" />
+            </Array>
+            <mxPoint x="2209.84" y="570" as="sourcePoint" />
+            <mxPoint x="1890.163529411765" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-96" value="Done" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;spacingBottom=7;spacingTop=2;fontSize=14;fontFamily=Verdana;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2090.84" y="700" />
+            </Array>
+            <mxPoint x="1890.163529411765" y="700" as="sourcePoint" />
+            <mxPoint x="2209.84" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-97" value="In the message, there is TTAAii and CCCC, &lt;br&gt;can you confirm the data was sent with these headers on the GTS ?" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;spacingBottom=7;spacingTop=2;html=1;fontFamily=Verdana;fontSize=14;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2090.84" y="760" />
+            </Array>
+            <mxPoint x="2209.84" y="760" as="sourcePoint" />
+            <mxPoint x="1890.163529411765" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-98" value="Yes" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;html=1;fontSize=14;fontFamily=Verdana;spacingTop=2;spacingBottom=7;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2090.84" y="800" />
+            </Array>
+            <mxPoint x="1890.163529411765" y="800" as="sourcePoint" />
+            <mxPoint x="2209.84" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-99" value="Everything is correct. Let me inform WMO Secretariat." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;fontSize=14;fontFamily=Verdana;spacingTop=2;spacingBottom=7;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2090.59" y="850" />
+            </Array>
+            <mxPoint x="2209.59" y="850" as="sourcePoint" />
+            <mxPoint x="1890.413529411765" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-100" value="All checks are good. Centre is ready&lt;br&gt;for your approval to switch off MSS." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;spacingTop=2;spacingBottom=7;strokeWidth=2;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1804.3400000000001" y="1000" />
+            </Array>
+            <mxPoint x="2209.59" y="1000" as="sourcePoint" />
+            <mxPoint x="1570.4135294117648" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-103" value="Enable subscription to cache/a/wis2/centre-id/core/..." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;fontFamily=Verdana;fontSize=14;spacingTop=2;spacingBottom=7;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100.77" y="1180" />
+            </Array>
+            <mxPoint x="1249.59" y="1180" as="sourcePoint" />
+            <mxPoint x="930.4135294117648" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-104" value="Gateway is ready. Can you ask&#xa;Centre to send a test message ?" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontFamily=Verdana;fontSize=14;spacingTop=2;spacingBottom=7;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1390" y="1380" />
+            </Array>
+            <mxPoint x="1249.8235294117649" y="1380" as="sourcePoint" />
+            <mxPoint x="1569" y="1380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-105" value="Can you send some test message&#xa;with the required properties ?" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontFamily=Verdana;fontSize=14;strokeWidth=2;spacingTop=2;spacingBottom=7;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1720" y="1400" />
+            </Array>
+            <mxPoint x="1570.4135294117648" y="1400" as="sourcePoint" />
+            <mxPoint x="1889.5900000000001" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-106" value="Done" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;spacingTop=2;spacingBottom=7;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1731" y="1440" />
+            </Array>
+            <mxPoint x="1889.5900000000001" y="1440" as="sourcePoint" />
+            <mxPoint x="1570.4135294117648" y="1440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-107" value="Download data." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;fontFamily=Verdana;fontSize=14;spacingTop=2;spacingBottom=7;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870.5899999999999" y="1470" />
+            </Array>
+            <mxPoint x="1249.59" y="1470" as="sourcePoint" />
+            <mxPoint x="610.4135294117649" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-108" value="Test message received,&#xa;download data succesful,&#xa;test data sent on the GTS. All good !" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontFamily=Verdana;fontSize=14;spacingTop=2;spacingBottom=7;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1420" y="1500" />
+            </Array>
+            <mxPoint x="1249.8235294117649" y="1499.9999999999995" as="sourcePoint" />
+            <mxPoint x="1569" y="1499.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-109" value="Gateway for Centre disabled." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;html=1;spacingTop=2;spacingBottom=7;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1430" y="1680" />
+            </Array>
+            <mxPoint x="1249.8235294117649" y="1680" as="sourcePoint" />
+            <mxPoint x="1569" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-110" value="Everything is ready." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;spacingTop=2;spacingBottom=7;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1760.92" y="1700" />
+            </Array>
+            <mxPoint x="1570.38" y="1700" as="sourcePoint" />
+            <mxPoint x="1889.63" y="1700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-111" value="You can add permanently the properties in the message for GTS data." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;fontFamily=Verdana;fontSize=14;html=1;spacingTop=2;spacingBottom=7;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1730" y="1750" />
+            </Array>
+            <mxPoint x="1570.4135294117648" y="1750" as="sourcePoint" />
+            <mxPoint x="1889.59" y="1750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-112" value="On DD/MM/YYYY at HH:00 UTC, stop sending data on the GTS." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;fontSize=14;fontFamily=Verdana;html=1;spacingTop=2;spacingBottom=7;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1751.04" y="1800" />
+            </Array>
+            <mxPoint x="1570.38" y="1800" as="sourcePoint" />
+            <mxPoint x="1889.63" y="1800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-113" value="On DD/MM/YYYY at HH:00 UTC, enable the gateway for Centre" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;html=1;spacingTop=2;spacingBottom=7;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1450" y="1850" />
+            </Array>
+            <mxPoint x="1569" y="1850" as="sourcePoint" />
+            <mxPoint x="1249.75" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-114" value="On DD/MM/YYYY at HH:00 UTC, GTS data from Centre will be sent by&lt;br&gt;WIS2 to GTS Gateway." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;spacingTop=2;spacingBottom=7;html=1;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1804.2600000000002" y="1910" />
+            </Array>
+            <mxPoint x="1570.38" y="1910" as="sourcePoint" />
+            <mxPoint x="2209.63" y="1910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-116" value="Enable gateway function for data from Centre" style="curved=1;rounded=1;fontSize=14;fontFamily=Verdana;html=1;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1190" y="2030" />
+              <mxPoint x="1100" y="2050" />
+              <mxPoint x="1140" y="2110" />
+            </Array>
+            <mxPoint x="1248.9999999999995" y="2030" as="sourcePoint" />
+            <mxPoint x="1248.9999999999995" y="2110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-117" value="Verify that data is still received on the GTS." style="curved=1;rounded=1;fontSize=14;fontFamily=Verdana;html=1;strokeWidth=2;" parent="1" source="OQUS06HyzIC1bEEYyVjX-90" target="OQUS06HyzIC1bEEYyVjX-90" edge="1">
+          <mxGeometry x="-0.9806" y="-29" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2320" y="2181" />
+              <mxPoint x="2340" y="2210" />
+              <mxPoint x="2320" y="2250" />
+            </Array>
+            <mxPoint x="2209.75" y="2210" as="sourcePoint" />
+            <mxPoint x="2209.75" y="2240" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-118" value="Stopped sending on the GTS" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;spacingTop=2;spacingBottom=7;html=1;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1730.59" y="2120" />
+            </Array>
+            <mxPoint x="1889.59" y="2120" as="sourcePoint" />
+            <mxPoint x="1570.4135294117648" y="2120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-119" value="Gateway enabled" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;fontSize=14;fontFamily=Verdana;spacingBottom=7;spacingTop=2;" parent="1" edge="1">
+          <mxGeometry x="0.0616" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="930.5" y="2150" />
+            </Array>
+            <mxPoint x="1249.4999999999995" y="2150" as="sourcePoint" />
+            <mxPoint x="1569.5" y="2150" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-120" value="Data is still received on the GTS" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;strokeWidth=2;fontSize=14;fontFamily=Verdana;html=1;spacingTop=2;spacingBottom=7;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1803.6200000000001" y="2280" />
+            </Array>
+            <mxPoint x="2209.62" y="2280" as="sourcePoint" />
+            <mxPoint x="1570.3700000000001" y="2280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-121" value="Centre is running a WIS2 Node and has migrated operations (sending and receiving data) to WIS2." style="fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Verdana;strokeWidth=2;fontStyle=0;fontSize=13;align=center;whiteSpace=wrap;spacingLeft=3;spacingRight=3;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1530" y="210" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-122" value="GISC must verify that Centre will publish ex-GTS data using the agreed procedure." style="fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontFamily=Verdana;fontSize=14;whiteSpace=wrap;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1850" y="450" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-123" value="By using a test MQTT client, the GISC can verify that the WIS2 Notification Message is correct? It must include the additional properties (CCCC and TTAAii)." style="fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=14;fontFamily=Verdana;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1850" y="590" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-124" value="The Centre must now wait for WMO Secretariat&lt;br&gt;confirmation that everything is ready." style="fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontFamily=Verdana;fontSize=14;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1850" y="870" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-128" value="Migration is complete Centre can switch off MMS WMO records the migration and amend the relevant KPI." style="fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;strokeWidth=2;fontSize=14;fontFamily=Verdana;whiteSpace=wrap;html=1;spacingTop=2;spacingBottom=2;spacingRight=4;spacingLeft=4;" parent="1" vertex="1">
+          <mxGeometry x="1370" y="2310" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-86" value="Global Brokers" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;fontSize=14;fontStyle=1;fontFamily=Verdana;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="830" y="80" width="200" height="2400" as="geometry" />
+        </mxCell>
+        <mxCell id="9jRDH8uggtIWDUWKUjSG-3" value="A new centre is ready to switch off MSS.&#xa;Can you activate in test mode the gateway for this centre.&#xa;Here are the TTAAii and CCCC they are using." style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;spacingTop=2;spacingBottom=7;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1569.75" y="1130.23" as="sourcePoint" />
+            <mxPoint x="1250" y="1130.23" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9jRDH8uggtIWDUWKUjSG-7" value="Can you give the full list of &lt;br&gt;TTAAII and CCCC that you are using?" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=1;fontSize=14;fontFamily=Verdana;spacingTop=2;spacingBottom=7;strokeWidth=2;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1570.12" y="1060.0500000000002" as="sourcePoint" />
+            <mxPoint x="1889.87" y="1060.0500000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-125" value="If the WIS2 Notification Message received&lt;br&gt;included the GTS migration properties&lt;br&gt;as defined in the WIS2 Transition Guide&lt;br&gt;the WIS2 to GTS gateway will download the data&lt;br&gt;from the Global Cache and will send the data &lt;br&gt; to the local MSS." style="fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=14;fontFamily=Verdana;whiteSpace=wrap;html=1;spacingBottom=2;spacingTop=2;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="1200" width="400" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-126" value="WIS2 to GTS Gateway MUST disable the gateway for Centre. This is to avoid having duplicates on the GTS. The WIS2 to GTS Gateway MUST wait WMO Secretariat signal to effectively send data on the GTS." style="fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontFamily=Verdana;fontSize=14;whiteSpace=wrap;html=1;spacingTop=2;spacingBottom=2;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="1520" width="400" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="9jRDH8uggtIWDUWKUjSG-12" value="Disable sending data on GTS" style="curved=1;rounded=1;fontSize=14;fontFamily=Verdana;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1830" y="2000" />
+              <mxPoint x="1740" y="2020" />
+              <mxPoint x="1780" y="2080" />
+            </Array>
+            <mxPoint x="1888.9999999999995" y="2000" as="sourcePoint" />
+            <mxPoint x="1888.9999999999995" y="2080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQUS06HyzIC1bEEYyVjX-127" value="On DD/MM/YYYY at HH:00 UTC." style="fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=14;fontFamily=Verdana;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="1930" width="1741" height="49" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
