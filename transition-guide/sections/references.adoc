@@ -1,14 +1,15 @@
-== References
+== 8. References
 
-=== Normative
+=== 8.1 Normative
 
-* [[wmo-1060]] WMO: Manual on WIS (WMO No. 1060), Vol II. WIS 2.0
-* [[wmo-wcmp2]] WMO: WMO Core Metadata Profile version 2 (WCMP2) footnote:[https://wmo-im.github.io/wcmp2]
-* [[wmo-wth]] WMO: WIS2 Topic Hierarchy (WTH) footnote:[https://github.com/wmo-im/wis2-topic-hierarchy]
-* [[wmo-wnm]] WMO: WIS2 Notification Message (WNM) format footnote:[https://wmo-im.github.io/wis2-notification-message]
-* [[wmo-wmh]] WMO: WIS2 Metric Hierarchy (WMH) footnote:[https://github.com/wmo-im/wis2-metric-hierarchy]
+* https://library.wmo.int/idurl/4/68731[_Manual on the WMO Information System_] (WMO-No. 1060), Volume II
+** Appendix D: WIS2 Topic Hierarchy (WTH) 
+** Appendix E: WIS2 Notification Message (WNM) format
+** Appendix F: WMO Core Metadata Profile version 2 (WCMP2) 
+** WIS2 Metric Hierarchy (WMH)footnote:[https://github.com/wmo-im/wis2-metric-hierarchy]
 
-=== Informative
+=== 8.2 Informative
 
-* [[wmo-1213]] WMO: WMO Information System 2.0 Strategy (WMO No. 1213) footnote:[https://library.wmo.int/index.php?lvl=notice_display&id=20422]
-* [[wmo-1239]] WMO: WMO Guidelines on Emerging Data Issues (WMO No. 1239) footnote:[https://library.wmo.int/index.php?lvl=notice_display&id=21644]
+* https://library.wmo.int/idurl/4/56019[_WMO Information System 2.0 Strategy_] (WMO-No. 1213)
+* https://library.wmo.int/idurl/4/56904[_WMO Guidelines on Emerging Data Issues_] (WMO-No. 1239)
+
