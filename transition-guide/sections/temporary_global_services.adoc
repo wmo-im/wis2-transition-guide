@@ -87,7 +87,7 @@ As it is expected for data consumers, and to ensure resilient operation, the gat
 During the transition period, other gateways will republish GTS data to WIS2. These GTS to WIS2 gateways will publish via a designated ``centre-id``. To avoid an infinite loop of republication, it is essential that a WIS2 to GTS gateway does not subscribe to notification messages associated with the centre-id of a GTS to WIS2 gateway.
 
 
-== 5. STOPPIONG A MESSAGE SWITCHING SYSTEM
+== 5. STOPPING A MESSAGE SWITCHING SYSTEM
 
 Thanks to the gateway functions previously described, WIS centres that currently use the GTS to exchange operational data and that have successfully implemented a WIS2 Node with the additional features required for the gateways to provide the gateway service, will be able to stop their MSS, if they wish to do so, before the end of the complete migration. Gradually stopping of the whole MSS shall be done in an orderly and coordinated manner so that all data required by Members for their operations will continue to be available.
 

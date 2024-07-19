@@ -1,4 +1,4 @@
-== Principles
+== 3. Principles
 
 The following principles are appropriate for the transition.
 
@@ -17,6 +17,7 @@ _Note: WIS centres are Global Information System Centres (GISCs), Data Collectio
 	
 	* Decommissioning WIS1 and GTS services will be the decision of each National Centre (NC), Data Collection and Production Centre (DCPC) or GISC, when they have considered that the migration is complete for them and their users;
 	* After migration to WIS2, there is no requirement to run a Message Switching System (MSS) to receive or send data from centres that have not made the transition. The centre will decide when and if it wishes to stop its MSS. It can also stop data dissemination to GTS.
+	
 **Principle 4**: New data (such as from the Global Basic Observing Network (GBON), or related to climate, hydrology and the cryosphere) will be exchanged solely on WIS2:
 	
 	* WIS2 is designed to enable Resolution 1 (Cg-Ext(2021)) – WMO Unified Policy for the International Exchange of Earth System Data (https://library.wmo.int/idviewer/57850/9[_World Meteorological Congress: Abridged Final Report of the Extraordinary Session_] (WMO-No. 1281)) and to support the WMO Global Basic Observing Network. The new data will be available on WIS2. A centre not having made the migration to WIS2 will not receive the new data. This data will not have GTS TTAAii headers and will not be exchanged over the GTS.
