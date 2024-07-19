@@ -1,20 +1,20 @@
-== 6. MANAGEMENT OF WIS2 AND GTS
+== 5. MANAGEMENT OF WIS2 AND GTS
 
 During the transition to WIS2, maintaining a very high level of service of WIS1 and GTS is key to ensuring that all Members and WIS users can send and receive the data required to run their operations, regardless of whether they have migrated to WIS2 or are still relying on the GTS. As described earlier, the WIS2 to GTS gateway and the GTS to WIS2 gateway will have a key role in this. The present section describes what Members are required to do during this transition, depending on their role within the GTS and WIS1.
 
-=== 6.1 Maintenance and operation of Message Switching Systems
+=== 5.1 Maintenance and operation of Message Switching Systems
 
-==== 6.1.1 Main Telecommunication Network
+==== 5.1.1 Main Telecommunication Network
 
 During the migration to WIS2, the Main Telecommunication Network (MTN), along with the WMCs and designated RTHs, shall keep their MSS operational. They shall continue to publish data, collect the bulletins from their associated NMCs and transmit them in the appropriate form on the MTN, either directly or through the appropriate WMC, until the transition from GTS to WIS2 is completed.
 
-==== 6.1.2 Regional Telecommunication Hubs
+==== 5.1.2 Regional Telecommunication Hubs
 
 Regional Telecommunication Hubs (RTHs) shall keep their MSS operational and continue to publish data collecting the bulletins from their associated NMCs and transmitting them in the appropriate form on the MTN, either directly or through the appropriate WMC/RTH in GTS until all Members in their area of responsibility migrate from GTS to WIS2.
 
 When RTHs have migrated to WIS2 and all Members in their area of responsibility have migrated to WIS2, RTHs may decide to turn off their MSS. In this case, they should contact the WMO Secretariat to switch off their MSS in a coordinated manner.
 
-==== 6.1.3 National Meteorological Centres
+==== 5.1.3 National Meteorological Centres
 
 National Meteorological Centres (NMCs) shall operate a WIS2 Node to share their data and discovery metadata in WIS2.
 
@@ -22,7 +22,7 @@ NMCs that have implemented a WIS2 Node and published all the data transmitted on
 
 _Note: This WIS2 Notification Messages with GTS properties will only concern data that are already published in GTS. New data will only be published on WIS2._
 
-=== 6.2 Maintenance and operation of WIS1 Catalogue and Cache by GISCs
+=== 5.2 Maintenance and operation of WIS1 Catalogue and Cache by GISCs
 
 Each Global Information System Centres (GISC) shall maintain their WIS1 Catalogue and Cache as long as WIS users are using their services for operations. GISCs are invited to help users migrate to WIS2. When a GISC has successfully migrated its users to WIS2, the GISC may stop its WIS1 Cache and Catalogue service and shall inform the WMO Secretariat.
 

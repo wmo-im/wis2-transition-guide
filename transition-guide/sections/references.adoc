@@ -1,6 +1,6 @@
-== 8. References
+== 7. References
 
-=== 8.1 Normative
+=== 7.1 Normative
 
 * https://library.wmo.int/idurl/4/68731[_Manual on the WMO Information System_] (WMO-No. 1060), Volume II
 ** Appendix D: WIS2 Topic Hierarchy (WTH) 
@@ -8,7 +8,7 @@
 ** Appendix F: WMO Core Metadata Profile version 2 (WCMP2) 
 ** WIS2 Metric Hierarchy (WMH)footnote:[https://github.com/wmo-im/wis2-metric-hierarchy]
 
-=== 8.2 Informative
+=== 7.2 Informative
 
 * https://library.wmo.int/idurl/4/56019[_WMO Information System 2.0 Strategy_] (WMO-No. 1213)
 * https://library.wmo.int/idurl/4/56904[_WMO Guidelines on Emerging Data Issues_] (WMO-No. 1239)

@@ -1,20 +1,20 @@
-== 4.   TEMPORARY GLOBAL SERVICES
+== 3.   TEMPORARY GLOBAL SERVICES
 
-=== 4.1 GTS to WIS2 gateway
+=== 3.1 GTS to WIS2 gateway
 
 The Executive Council, through https://library.wmo.int/idviewer/66258/1147[Resolution 34 (EC-76)], recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it, in order to be ready for a pre-operational phase in 2024, and then for the transition starting in 2025. According to the WIS2 implementation plan, the GTS will be decommissioned by 2033 and NMHSs will use the WIS2 platform for data exchange, with the transition starting in 2025.
 During the transition period, in order to avoid some WIS centres being forced to run both data-sharing frameworks (WIS2 and GTS) simultaneously, and given the challenges associated with maintaining two operational systems for the same purpose, a gateway from GTS to WIS2 has been designed. The gateway takes into account the time required for Members to migrate to the new system and minimizes the time a Member has to operate both systems in parallel.
 
 
-==== 4.1.1  Purpose
+==== 3.1.1  Purpose
 
 The purpose of the GTS to WIS2 gateway is to enable Members who have migrated to WIS2, and stopped their GTS systems, to continue receiving GTS data from WIS2. This gateway also enables users who are not connected to GTS to access GTS data from WIS2, during the transition phase. The GTS to WIS2 gateway will forward the GTS traffic it receives to WIS2. In accordance with the WIS2 specification, all data received on one GTS link will be stored on an HTTP(s) endpoint of the gateway, and will generate a WIS2 Notification Message.
 
-==== 4.1.2  GTS to WIS2 gateway provider
+==== 3.1.2  GTS to WIS2 gateway provider
 
 To ensure resilient operation, there will be more than one GTS to WIS2 gateway.
 
-==== 4.1.3  Technical requirements
+==== 3.1.3  Technical requirements
 
 * A GTS to WIS2 gateway is a DCPC function. All requirements related to WIS2 Nodes are applicable. A GTS to WIS2 gateway will obtain a specific unique centre-id from the WMO Secretariat;
 * In addition to the standard WIS2 Node specifications, the GTS to WIS2 gateway will support the following:
@@ -35,11 +35,11 @@ To ensure resilient operation, there will be more than one GTS to WIS2 gateway.
 *	Each GTS to WIS2 gateway maintains a list of TTAAii headers for recommended data, in order to be able to send the notification to the correct topic. The list is coordinated and shared between the gateway operators.
 
 
-=== 4.2 WIS2 to GTS gateway
+=== 3.2 WIS2 to GTS gateway
 
 The WIS2 implementation plan outlines a gradual transition of data exchange from GTS to WIS2. The transition is expected to occur between 2025 and 2030. The GTS will be decommissioned once the transition is complete. 
 
-==== 4.2.1  Purpose
+==== 3.2.1  Purpose
 
 When a National Meteorological Centre (NMC), running a Message Switching System and exchanging data on the GTS, has implemented WIS2, it may wish to stop sending its data directly on the GTS so that it can stop the MSS.
 
@@ -47,11 +47,11 @@ The WIS2 to GTS gateway will ensure that only the data currently available on th
 
 To ensure resilient operation, there will be more than one WIS2 to GTS gateway
 
-==== 4.2.2 WIS2 to GTS gateway operators
+==== 3.2.2 WIS2 to GTS gateway operators
 The gateway will be provided by designated Regional Telecommunication Hubs (RTH). 
 
-==== 4.2.3 Technical requirements
-===== 4.2.3.1 For WIS centres wishing to stop their Message Switching System
+==== 3.2.3 Technical requirements
+===== 3.2.3.1 For WIS centres wishing to stop their Message Switching System
 
 A Member planning to stop GTS transmission shall provide its data in conformance with WIS2 Node operations on WIS2. For data that have previously been available on the GTS, and should continue to be available on the GTS, the GTS Abbreviated Heading Line (AHL) of the bulletin in which the data are to be published needs to be indicated. This is done by including the GTS property in the WIS2 Notification Message (see example in the next paragraph).
 
@@ -70,7 +70,7 @@ The ``gts`` property enables the WIS2 to GTS gateway operator to easily identify
 
 For core data, the Global Cache will ensure their normal operation and the data to be relayed onto the GTS will be available on the Global Cache. For recommended data, WIS centres should allow unrestricted access from the gateways. WIS centres will inform the WMO Secretariat, so that the gateway will establish the required subscriptions.
 
-===== 4.2.3.2 Guidance for WIS2 to GTS gateway operators
+===== 3.2.3.2 Guidance for WIS2 to GTS gateway operators
 
 A WIS2 to GTS gateway operator shall operate the following components throughout the transition period:
 
@@ -87,7 +87,7 @@ As it is expected for data consumers, and to ensure resilient operation, the gat
 During the transition period, other gateways will republish GTS data to WIS2. These GTS to WIS2 gateways will publish via a designated ``centre-id``. To avoid an infinite loop of republication, it is essential that a WIS2 to GTS gateway does not subscribe to notification messages associated with the centre-id of a GTS to WIS2 gateway.
 
 
-== 5. STOPPING A MESSAGE SWITCHING SYSTEM
+== 4. STOPPING A MESSAGE SWITCHING SYSTEM
 
 Thanks to the gateway functions previously described, WIS centres that currently use the GTS to exchange operational data and that have successfully implemented a WIS2 Node with the additional features required for the gateways to provide the gateway service, will be able to stop their MSS, if they wish to do so, before the end of the complete migration. Gradually stopping of the whole MSS shall be done in an orderly and coordinated manner so that all data required by Members for their operations will continue to be available.
 
