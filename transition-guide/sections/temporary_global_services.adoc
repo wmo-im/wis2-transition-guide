@@ -22,17 +22,17 @@ To ensure resilient operation, there will be more than one GTS to WIS2 gateway.
   - The topic hierarchy for GTS data on WIS2 will be: 
   ``origin/a/wis2/{centre-id}/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC``
   
-      Example for DWD: 
+  - Example for DWD: 
       ``origin/a/wis2/de-dwd-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC`` 
-      Example for JMA: 
+  - Example for JMA: 
       ``origin/a/wis2/jp-jma-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC``
 
   - The ``T1/T2/A1/A2/ii/CCCC`` above is derived from the headers of the data received on the GTS.
 
 * The Global Caches will cache data that is being published using ``core`` in the topic hierarchy;
-*	Data consumers receiving the GTS data through WIS2 will need to be able to handle duplicates. This is consistent with the current practices of handling duplicate messages on the GTS;
-*	Access to recommended GTS data should be limited to WMO Members;
-*	Each GTS to WIS2 gateway maintains a list of TTAAii headers for recommended data, in order to be able to send the notification to the correct topic. The list is coordinated and shared between the gateway operators.
+* Data consumers receiving the GTS data through WIS2 will need to be able to handle duplicates. This is consistent with the current practices of handling duplicate messages on the GTS;
+* Access to recommended GTS data should be limited to WMO Members;
+* Each GTS to WIS2 gateway maintains a list of TTAAii headers for recommended data, in order to be able to send the notification to the correct topic. The list is coordinated and shared between the gateway operators.
 
 
 === 3.2 WIS2 to GTS gateway
@@ -74,11 +74,11 @@ For core data, the Global Cache will ensure their normal operation and the data 
 
 A WIS2 to GTS gateway operator shall operate the following components throughout the transition period:
 
-(a)	A data consumer, to retrieve data published on WIS2. All data consumer specifications apply to the WIS2 to GTS gateway;
+(a) A data consumer, to retrieve data published on WIS2. All data consumer specifications apply to the WIS2 to GTS gateway;
 
-(b)	An MSS, with the required configuration to reach all RTHs;
+(b) An MSS, with the required configuration to reach all RTHs;
 
-(c)	The gateway’s MSS will process incoming data files, batching individual items into bulletins as per standard configuration, and publish those bulletins onto the GTS for onward distribution via RTHs on the Main Telecommunication Network (MTN) and beyond. The mechanism depends on local implementation choices and may differ from one gateway to another.
+(c) The gateway’s MSS will process incoming data files, batching individual items into bulletins as per standard configuration, and publish those bulletins onto the GTS for onward distribution via RTHs on the Main Telecommunication Network (MTN) and beyond. The mechanism depends on local implementation choices and may differ from one gateway to another.
 
 Over the transition period, the list of abbreviated headings (TTAAii/CCCC) to relay from WIS2 to GTS will grow when new NMCs plan to stop their MSS. It means that the gateway will require a method that allows for the addition of batches of abbreviated headings when new centres are ready for the transition.
 
@@ -102,8 +102,8 @@ It must also be noted that the final switch (that is, the action of stopping the
 
 Upon request by a centre, the WMO Secretariat will inform the gateways when a new ``centre-id`` wishes to use the relay function as well as the required subscription topics. When requested by the WMO Secretariat, the gateways will implement the following subscriptions:
 
-(a)	Subscribe to notifications on the topic: ``cache/a/wis2/{centre-id}/data/#``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function;
+(a) Subscribe to notifications on the topic: ``cache/a/wis2/{centre-id}/data/#``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function;
 
-(b)	Potentially subscribe to ``origin/a/wis2/{centre-id}/data/recommended/#`` for the WIS2 Node also has recommended data on the GTS.
+(b) Potentially subscribe to ``origin/a/wis2/{centre-id}/data/recommended/#`` for the WIS2 Node also has recommended data on the GTS.
 
 It is important to note that subscribing to these topics should not imply pushing the data onto the GTS immediately. Making the data available on the GTS will require explicit approval from the WMO Secretariat. It is up to the gateway operators to implement this "kill switch" (for example, by disabling the subscription or blocking the flow between the data consumer and the MSS for those TTAAii/CCCC only).
