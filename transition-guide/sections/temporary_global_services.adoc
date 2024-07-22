@@ -45,7 +45,7 @@ When a National Meteorological Centre (NMC), running a Message Switching System 
 
 The WIS2 to GTS gateway will ensure that only the data currently available on the GTS and whose Member is wishing to stop its MSS will be re-published onto the GTS, so that no data is lost during the transition.
 
-To ensure resilient operation, there will be more than one WIS2 to GTS gateway
+To ensure resilient operation, there will be more than one WIS2 to GTS gateway.
 
 ==== 3.2.2 WIS2 to GTS gateway operators
 The gateway will be provided by designated Regional Telecommunication Hubs (RTH). 

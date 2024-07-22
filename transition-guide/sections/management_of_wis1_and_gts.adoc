@@ -22,7 +22,7 @@ NMCs that have implemented a WIS2 Node and published all the data transmitted on
 
 _Note: This WIS2 Notification Messages with GTS properties will only concern data that are already published in GTS. New data will only be published on WIS2._
 
-=== 5.2 Maintenance and operation of WIS1 Catalogue and Cache by GISCs
+=== 5.2 Maintenance and operation of WIS1 Catalogue and Cache by Global Information System Centres
 
 Each Global Information System Centres (GISC) shall maintain their WIS1 Catalogue and Cache as long as WIS users are using their services for operations. GISCs are invited to help users migrate to WIS2. When a GISC has successfully migrated its users to WIS2, the GISC may stop its WIS1 Cache and Catalogue service and shall inform the WMO Secretariat.
 
