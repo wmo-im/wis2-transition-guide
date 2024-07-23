@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <meta name="copyright" content="Copyright © 2024 World Meteorological Organization (WMO)">
-<title>Draft guidance on transition from GTS to WIS2</title>
+<title>Provisions for the transition from the WMO Information System (WIS)  1.0 and Global Telecommunication System to WIS  2.0 (DRAFT)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -141,7 +141,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -163,6 +163,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -328,7 +329,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -436,7 +437,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book">
 <div id="header">
-<h1>Draft guidance on transition from GTS to WIS2</h1>
+<h1>Provisions for the transition from the WMO Information System (WIS)  1.0 and Global Telecommunication System to WIS  2.0 (DRAFT)</h1>
 </div>
 <div id="content">
 <div id="preamble">
@@ -454,10 +455,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong class="big">World Meteorological Organization</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2024-02-18</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2024-07-23</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Version: 2024-02-15</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Version: 2024-07-15-approved by EC-78</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Document location: <a href="https://community.wmo.int/wis2-transition-guide" class="bare">https://community.wmo.int/wis2-transition-guide</a></p></td>
@@ -477,56 +478,56 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc">
 <div id="toctitle" class="title">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_preamble">1. Preamble</a></li>
-<li><a href="#_introduction">2. Introduction</a></li>
-<li><a href="#_principles">3. Principles</a></li>
-<li><a href="#_temporary_global_services">4. Temporary global services</a>
+<li><a href="#_preamble">PREAMBLE</a></li>
+<li><a href="#_1_introduction">1. INTRODUCTION</a></li>
+<li><a href="#_2_principles">2. PRINCIPLES</a></li>
+<li><a href="#_3_temporary_global_services">3.   TEMPORARY GLOBAL SERVICES</a>
 <ul class="sectlevel2">
-<li><a href="#_gts_to_wis2_gateway">4.1. GTS to WIS2 Gateway</a>
+<li><a href="#_3_1_gts_to_wis2_gateway">3.1 GTS to WIS2 gateway</a>
 <ul class="sectlevel3">
-<li><a href="#_purpose">4.1.1. Purpose</a></li>
-<li><a href="#_gts_to_wis2_gateway_provider">4.1.2. GTS to WIS2 Gateway provider</a></li>
-<li><a href="#_technical_requirements">4.1.3. Technical requirements</a></li>
+<li><a href="#_3_1_1_purpose">3.1.1  Purpose</a></li>
+<li><a href="#_3_1_2_gts_to_wis2_gateway_provider">3.1.2  GTS to WIS2 gateway provider</a></li>
+<li><a href="#_3_1_3_technical_requirements">3.1.3  Technical requirements</a></li>
 </ul>
 </li>
-<li><a href="#_wis2_to_gts_gateway">4.2. WIS2 to GTS Gateway</a>
+<li><a href="#_3_2_wis2_to_gts_gateway">3.2 WIS2 to GTS gateway</a>
 <ul class="sectlevel3">
-<li><a href="#_purpose_2">4.2.1. Purpose</a></li>
-<li><a href="#_wis2_to_gts_gateway_operators">4.2.2. WIS2 to GTS Gateway operators</a></li>
-<li><a href="#_technical_requirements_2">4.2.3. Technical requirements</a></li>
+<li><a href="#_3_2_1_purpose">3.2.1  Purpose</a></li>
+<li><a href="#_3_2_2_wis2_to_gts_gateway_operators">3.2.2 WIS2 to GTS gateway operators</a></li>
+<li><a href="#_3_2_3_technical_requirements">3.2.3 Technical requirements</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_stopping_a_message_switching_system">5. Stopping a Message Switching System</a></li>
-<li><a href="#_management_of_wis1_and_gts">6. Management of WIS1 and GTS</a>
+<li><a href="#_4_stopping_a_message_switching_system">4. STOPPING A MESSAGE SWITCHING SYSTEM</a></li>
+<li><a href="#_5_management_of_wis2_and_gts">5. MANAGEMENT OF WIS2 AND GTS</a>
 <ul class="sectlevel2">
-<li><a href="#_maintenance_and_operation_of_message_switching_system_mss">6.1. Maintenance and operation of Message Switching System (MSS)</a>
+<li><a href="#_5_1_maintenance_and_operation_of_message_switching_systems">5.1 Maintenance and operation of Message Switching Systems</a>
 <ul class="sectlevel3">
-<li><a href="#_main_telecommunication_network">6.1.1. Main Telecommunication Network</a></li>
-<li><a href="#_regional_telecommunication_hubs">6.1.2. Regional Telecommunication Hubs</a></li>
-<li><a href="#_national_meteorological_centres">6.1.3. National Meteorological Centres</a></li>
+<li><a href="#_5_1_1_main_telecommunication_network">5.1.1 Main Telecommunication Network</a></li>
+<li><a href="#_5_1_2_regional_telecommunication_hubs">5.1.2 Regional Telecommunication Hubs</a></li>
+<li><a href="#_5_1_3_national_meteorological_centres">5.1.3 National Meteorological Centres</a></li>
 </ul>
 </li>
-<li><a href="#_maintenance_and_operation_of_wis1_catalogue_and_cache_by_giscs">6.2. Maintenance and operation of WIS1 Catalogue and Cache by GISCs</a></li>
-<li><a href="#_management_of_gts_abbreviated_headings">6.3. Management of GTS Abbreviated Headings</a>
+<li><a href="#_5_2_maintenance_and_operation_of_wis1_catalogue_and_cache_by_global_information_system_centres">5.2 Maintenance and operation of WIS1 Catalogue and Cache by Global Information System Centres</a></li>
+<li><a href="#_5_3_management_of_gts_abbreviated_headings">5.3 Management of GTS abbreviated headings</a>
 <ul class="sectlevel3">
-<li><a href="#_gts_headings_for_icao_aftn">6.3.1. GTS Headings for ICAO (AFTN)</a></li>
+<li><a href="#_5_3_1_gts_headings_for_international_civil_aviation_authority">5.3.1 GTS headings for International Civil Aviation Authority</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_management_of_wis_centres">7. Management of WIS centres</a>
+<li><a href="#_6_management_of_wis_centres">6. MANAGEMENT OF WIS CENTRES</a>
 <ul class="sectlevel2">
-<li><a href="#_national_centres">7.1. National Centres</a></li>
-<li><a href="#_data_collection_and_production_centres">7.2. Data Collection and Production Centres</a></li>
-<li><a href="#_global_information_system_centres">7.3. Global Information System Centres</a></li>
+<li><a href="#_6_1_national_centres">6.1 National Centres</a></li>
+<li><a href="#_6_2_data_collection_and_production_centres">6.2 Data Collection and Production Centres</a></li>
+<li><a href="#_6_3_global_information_system_centres">6.3 Global Information System Centres</a></li>
 </ul>
 </li>
-<li><a href="#_references">8. References</a>
+<li><a href="#_7_references">7. References</a>
 <ul class="sectlevel2">
-<li><a href="#_normative">8.1. Normative</a></li>
-<li><a href="#_informative">8.2. Informative</a></li>
+<li><a href="#_7_1_normative">7.1 Normative</a></li>
+<li><a href="#_7_2_informative">7.2 Informative</a></li>
 </ul>
 </li>
 </ul>
@@ -535,42 +536,48 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_preamble"><a class="anchor" href="#_preamble"></a>1. Preamble</h2>
+<h2 id="_preamble"><a class="anchor" href="#_preamble"></a>PREAMBLE</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This publication establishes the provisions for the transition from WIS 1.0 and GTS to WIS 2.0. The provisions for the WIS2 transition provide technical guidance and describe the practices to be followed by Members to implement WIS 2.0 and decommission WIS 1.0 and GTS systems. The practices described in this publication facilitate a smooth implementation of the technical regulation described in the Manual on WMO Information System (WMO No. 1060), Vol II and further explained in the Guide to the WMO Information System (WMO No. 1061) Vol. II.</p>
+<p>The present publication establishes the provisions for the transition from the WMO Information System (WIS) 1.0 and the Global Telecommunication System (GTS) to WIS 2.0. The provisions for the WIS2 transition provide technical guidance and describe the practices to be followed by Members to implement WIS 2.0 and decommission the WIS 1.0 and GTS systems. The practices described in this publication facilitate a smooth implementation of the technical regulation described in the <a href="https://library.wmo.int/idurl/4/68731"><em>Manual on WMO Information System</em></a> (WMO-No. 1060), Volume II (hereinafter <em>Manual on WIS</em>, Volume II), and further explained in the <a href="https://library.wmo.int/idurl/4/28988"><em>Guide to the WMO Information System</em></a> (WMO-No. 1061), Volume II (hereinafter <em>Guide to WIS</em>, Volume II).</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>2. Introduction</h2>
+<h2 id="_1_introduction"><a class="anchor" href="#_1_introduction"></a>1. INTRODUCTION</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Executive Council, with Resolution 34 (EC-76), endorsed the WMO Information System 2.0 (WIS2) implementation plan and recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it to be ready for a pre-operational phase in 2024, and then for the transition starting on 2025. This plan will be implemented according to the schedule provided in Figure 1. The pilot phase has been completed at the end of 2023, with several countries collaborating in building the WIS2 infrastructure. Each country had a different role in the WIS2 framework and implemented a specific component. Starting in January 2024, the implementation of WIS2 will enter the pre-operational phase, and the WIS2 services shall be ready to transition to an operational configuration, which is critical to ensure that WIS2 can serve the WMO community operationally from the beginning of 2025.  It is planned to migrate to WIS2 between 2025 and 2030, with an expected progress rate of up to 90%. The GTS is planned to be decommissioned by 2033.</p>
+<p>The WMO Executive Council, through <a href="https://library.wmo.int/idviewer/66258/1147">Resolution 34 (EC-76)</a> - Implementation plan update of the WMO Information System 2.0, endorsed the WMO Information System 2.0 (WIS2) implementation plan. The Resolution also recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it, in order to be ready for a pre-operational phase in 2024, and then for the transition starting in 2025. This plan will be implemented according to the schedule provided in Figure 1. The pilot phase was completed at the end of 2023, with several Members collaborating in building the WIS2 infrastructure. Each Member had a different role in the WIS2 framework and implemented a specific component. Starting in January 2024, the implementation of WIS2 entered the pre-operational phase, and the WIS2 services shall be ready to transition to an operational configuration, which is critical to ensure that WIS2 can serve the WMO community operationally, from the beginning of 2025. Migration to WIS2 is planned to occur between 2025 and 2030, with an expected progress rate of up to 90%. The GTS is planned to be decommissioned by 2033.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/wis2-timeline.png" alt="WIS2 implementation timeline">
+<img src="images/wis2-timeline.png" alt="Figure 1. WIS2 implementation timeline.">
 </div>
 <div class="title">Figure 1. WIS2 implementation timeline</div>
+</div>
+<div class="paragraph">
+<p>Key: NCs = National Centres; DCPCs = Data Collection and Production Centres; GISCs = Global Information System Centres</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_principles"><a class="anchor" href="#_principles"></a>3. Principles</h2>
+<h2 id="_2_principles"><a class="anchor" href="#_2_principles"></a>2. PRINCIPLES</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The following principles are appropriate for the transition:</p>
+<p>The following principles are appropriate for the transition.</p>
 </div>
 <div class="paragraph">
-<p><strong>Principle </strong>1: Each NMHS will be able to make the migration during the agreed period 2025-2030:</p>
+<p><strong>Principle 1</strong>: Each National Meteorological and Hydrological Service (NMHS) will be able to make the migration during the agreed period 2025–2030:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>NMHSs will migrate between 2025 and 2030 at a time convenient for them. There will not be a simultaneous migration of all the WIS Centers from WIS1 to WIS2.</p>
+<p>NMHSs will migrate between 2025 and 2030 at a time convenient for them. There will not be a simultaneous migration of all the WIS centres from WIS1 to WIS2.</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p><em>Note: WIS centres are Global Information System Centres (GISCs), Data Collection or Production Centres (DCPCs) and National Centres (NCs).</em></p>
 </div>
 <div class="paragraph">
 <p><strong>Principle 2</strong>: No GTS data loss during the transition:</p>
@@ -578,81 +585,78 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>During the pre-operational phase, and in coordination with the regional associations and GISCs, WIS2 infrastructure will be established in order to avoid data loss during the transition. The aim of this infrastructure is to ensure that data sent on the GTS can be received by a site having migrated on WIS2, and data, previously sent on the GTS, sent on WIS2 can be received by a site still on the GTS</p>
+<p>During the pre-operational phase, and in coordination with the regional associations and Global Information System Centres (GISCs), WIS2 infrastructure will be established, in order to avoid data loss during the transition. The aim of this infrastructure is to ensure that data sent on the GTS can be received by a site having migrated to WIS2, and the data, previously sent on the GTS, sent on WIS2, can be received by a site still on the GTS.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Principle 3</strong>: Each Centre will decide when decommissioning the WIS1 and GTS:</p>
+<p><strong>Principle 3</strong>: Each WIS centre will decide when to decommission WIS1 and GTS:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Decommissioning WIS1 and GTS services will be the decision of each NC/DCPC/GISC when they will consider that the migration is complete for them and their users.</p>
+<p>Decommissioning WIS1 and GTS services will be the decision of each National Centre (NC), Data Collection and Production Centre (DCPC) or GISC, when they have considered that the migration is complete for them and their users;</p>
 </li>
 <li>
-<p>After migration to WIS2, It is not required to run an MSS to receive or send data from Centres not having made the transition. The Centre will decide when and if they want to stop their Message Switching System MSS. They can also stop the data dissemination to GTS</p>
+<p>After migration to WIS2, there is no requirement to run a Message Switching System (MSS) to receive or send data from centres that have not made the transition. The centre will decide when and if it wishes to stop its MSS. It can also stop data dissemination to GTS.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><strong>Principle 4</strong>: New data (eg. GBON, Climate, Hydrology, Cryosphere) will be exchanged solely on WIS2:</p>
+<p><strong>Principle 4</strong>: New data (such as from the Global Basic Observing Network (GBON), or related to climate, hydrology and the cryosphere) will be exchanged solely on WIS2:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>WIS2 is designed to to enable the WMO Unified Data Policy, and to support the WMO Global Basic Observing Network. The new data will be available on WIS2. A centre not having made the migration to WIS2 will not receive the new data. This data will not have a GTS headers TTAAii and will not be exchanged over the GTS</p>
+<p>WIS2 is designed to enable Resolution 1 (Cg-Ext(2021)) – WMO Unified Policy for the International Exchange of Earth System Data (<a href="https://library.wmo.int/idviewer/57850/9"><em>World Meteorological Congress: Abridged Final Report of the Extraordinary Session</em></a> (WMO-No. 1281)) and to support the WMO Global Basic Observing Network. The new data will be available on WIS2. A centre not having made the migration to WIS2 will not receive the new data. This data will not have GTS TTAAii headers and will not be exchanged over the GTS.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_temporary_global_services"><a class="anchor" href="#_temporary_global_services"></a>4. Temporary global services</h2>
+<h2 id="_3_temporary_global_services"><a class="anchor" href="#_3_temporary_global_services"></a>3.   TEMPORARY GLOBAL SERVICES</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_gts_to_wis2_gateway"><a class="anchor" href="#_gts_to_wis2_gateway"></a>4.1. GTS to WIS2 Gateway</h3>
+<h3 id="_3_1_gts_to_wis2_gateway"><a class="anchor" href="#_3_1_gts_to_wis2_gateway"></a>3.1 GTS to WIS2 gateway</h3>
 <div class="paragraph">
-<p>The Executive Council, with resolution 34 (EC-76), endorsed the WMO Information System 2 (WIS2) implementation plan and recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it in order to be ready for a preoperational phase in 2024, and then for the transition starting on 2025. According to the WIS2 implementation plan, the Global Telecommunication System (GTS) will be decommissioned by 2033, and National Meteorological and Hydrological Services NMHSs will use the WIS2 platform for data exchange.</p>
-</div>
-<div class="paragraph">
-<p>During the transition period, in order to avoid some WIS centres being forced to run both data-sharing frameworks WIS2 and GTS simultaneously, with the challenges associated with maintaining two operational systems for the same purpose, a gateway from GTS to WIS2 is designed, taking into account the time required for Members to migrate to the new systems and minimizing the time a member has to operate both systems in parallel.</p>
+<p>The Executive Council, through <a href="https://library.wmo.int/idviewer/66258/1147">Resolution 34 (EC-76)</a>, recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it, in order to be ready for a pre-operational phase in 2024, and then for the transition starting in 2025. According to the WIS2 implementation plan, the GTS will be decommissioned by 2033 and NMHSs will use the WIS2 platform for data exchange, with the transition starting in 2025.
+During the transition period, in order to avoid some WIS centres being forced to run both data-sharing frameworks (WIS2 and GTS) simultaneously, and given the challenges associated with maintaining two operational systems for the same purpose, a gateway from GTS to WIS2 has been designed. The gateway takes into account the time required for Members to migrate to the new system and minimizes the time a Member has to operate both systems in parallel.</p>
 </div>
 <div class="sect3">
-<h4 id="_purpose"><a class="anchor" href="#_purpose"></a>4.1.1. Purpose</h4>
+<h4 id="_3_1_1_purpose"><a class="anchor" href="#_3_1_1_purpose"></a>3.1.1  Purpose</h4>
 <div class="paragraph">
-<p>The purpose of the GTS to WIS2 gateway is to enable Members who have migrated to WIS2 and have stopped their GTS systems to continue receiving GTS data from WIS2. This gateway also enables users who are not connected to GTS to access GTS data, during the transition phase, from WIS2. The GTS to WIS2 gateway will forward the GTS traffic it receives to WIS2. In accordance with the WIS2 specification, every data received on one GTS link will be stored on a HTTP(s) endpoint of the Gateway and will generate a WIS2 Notification Message.</p>
+<p>The purpose of the GTS to WIS2 gateway is to enable Members who have migrated to WIS2, and stopped their GTS systems, to continue receiving GTS data from WIS2. This gateway also enables users who are not connected to GTS to access GTS data from WIS2, during the transition phase. The GTS to WIS2 gateway will forward the GTS traffic it receives to WIS2. In accordance with the WIS2 specification, all data received on one GTS link will be stored on an HTTP(s) endpoint of the gateway, and will generate a WIS2 Notification Message.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_gts_to_wis2_gateway_provider"><a class="anchor" href="#_gts_to_wis2_gateway_provider"></a>4.1.2. GTS to WIS2 Gateway provider</h4>
+<h4 id="_3_1_2_gts_to_wis2_gateway_provider"><a class="anchor" href="#_3_1_2_gts_to_wis2_gateway_provider"></a>3.1.2  GTS to WIS2 gateway provider</h4>
 <div class="paragraph">
-<p>To ensure resilient operation, there will be more than one GTS to WIS2 Gateway.</p>
+<p>To ensure resilient operation, there will be more than one GTS to WIS2 gateway.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_technical_requirements"><a class="anchor" href="#_technical_requirements"></a>4.1.3. Technical requirements</h4>
+<h4 id="_3_1_3_technical_requirements"><a class="anchor" href="#_3_1_3_technical_requirements"></a>3.1.3  Technical requirements</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>A GTS to WIS2 gateway is a DCPC function. All requirements related to WIS2 Nodes are applicable. A GTS to WIS2 gateway will obtain from the WMO Secretariat a specific unique centre-id.</p>
+<p>A GTS to WIS2 gateway is a DCPC function. All requirements related to WIS2 Nodes are applicable. A GTS to WIS2 gateway will obtain a specific unique centre-id from the WMO Secretariat;</p>
 </li>
 <li>
 <p>In addition to the standard WIS2 Node specifications, the GTS to WIS2 gateway will support the following:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>The Topic Hierarchy for GTS data on WIS2 will be:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><code>origin/a/wis2/{centre-id}/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC</code></p>
+<p>The topic hierarchy for GTS data on WIS2 will be:
+<code>origin/a/wis2/{centre-id}/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC</code></p>
 </li>
 <li>
-<p>e.g for DWD: <code>origin/a/wis2/de-dwd-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC</code> and for JMA: <code>origin/a/wis2/jp-jma-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC</code></p>
+<p>Example for DWD:
+<code>origin/a/wis2/de-dwd-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC</code></p>
 </li>
-</ul>
-</div>
+<li>
+<p>Example for JMA:
+<code>origin/a/wis2/jp-jma-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC</code></p>
 </li>
 <li>
 <p>The <code>T1/T2/A1/A2/ii/CCCC</code> above is derived from the headers of the data received on the GTS.</p>
@@ -661,57 +665,53 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </li>
 <li>
-<p>The Global Caches will cache data that is being published using <code>core</code> in the Topic Hierarchy.</p>
+<p>The Global Caches will cache data that is being published using <code>core</code> in the topic hierarchy;</p>
 </li>
 <li>
-<p>Data Consumers receiving the GTS data through WIS2 will need to be able to handle duplicates. This is consistent with the current practices of handling duplicate messages on the GTS.</p>
+<p>Data consumers receiving the GTS data through WIS2 will need to be able to handle duplicates. This is consistent with the current practices of handling duplicate messages on the GTS;</p>
 </li>
 <li>
-<p>Access to recommended GTS data should be restricted to WMO members.</p>
+<p>Access to recommended GTS data should be limited to WMO Members;</p>
 </li>
 <li>
-<p>Each GTS to WIS2 Gateway maintains a list of TTAAii headers for recommended data in order to be able to send the notification to the correct topic. The list is coordinated and shared between the gateway operators.</p>
+<p>Each GTS to WIS2 gateway maintains a list of TTAAii headers for recommended data, in order to be able to send the notification to the correct topic. The list is coordinated and shared between the gateway operators.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_wis2_to_gts_gateway"><a class="anchor" href="#_wis2_to_gts_gateway"></a>4.2. WIS2 to GTS Gateway</h3>
+<h3 id="_3_2_wis2_to_gts_gateway"><a class="anchor" href="#_3_2_wis2_to_gts_gateway"></a>3.2 WIS2 to GTS gateway</h3>
 <div class="paragraph">
-<p>The WIS2 Implementation plan outlines a gradual transition of data exchange from the Global Telecommunications System (GTS) to WIS2. The transition is expected to occur between 2025 and 2030. The GTS will be decommissioned once the transition is complete.</p>
+<p>The WIS2 implementation plan outlines a gradual transition of data exchange from GTS to WIS2. The transition is expected to occur between 2025 and 2030. The GTS will be decommissioned once the transition is complete.</p>
 </div>
 <div class="sect3">
-<h4 id="_purpose_2"><a class="anchor" href="#_purpose_2"></a>4.2.1. Purpose</h4>
+<h4 id="_3_2_1_purpose"><a class="anchor" href="#_3_2_1_purpose"></a>3.2.1  Purpose</h4>
 <div class="paragraph">
-<p>When a NMC centre, running a Message Switching System and exchanging data on the GTS, has implemented WIS2, it may want to stop sending its data directly on the GTS so that it can stop the Message Switching System (MSS).</p>
+<p>When a National Meteorological Centre (NMC), running a Message Switching System and exchanging data on the GTS, has implemented WIS2, it may wish to stop sending its data directly on the GTS so that it can stop the MSS.</p>
 </div>
 <div class="paragraph">
-<p>The WIS2 to GTS gateway will ensure that <strong>only the data currently available on the GTS</strong> and whose Member is wishing to stop its MSS will be re-published onto the GTS, so that no data is loss during the transition.</p>
+<p>The WIS2 to GTS gateway will ensure that only the data currently available on the GTS and whose Member is wishing to stop its MSS will be re-published onto the GTS, so that no data is lost during the transition.</p>
 </div>
 <div class="paragraph">
-<p>To ensure resilient operation, there will be more than one WIS2 to GTS Gateway.</p>
+<p>To ensure resilient operation, there will be more than one WIS2 to GTS gateway.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_wis2_to_gts_gateway_operators"><a class="anchor" href="#_wis2_to_gts_gateway_operators"></a>4.2.2. WIS2 to GTS Gateway operators</h4>
+<h4 id="_3_2_2_wis2_to_gts_gateway_operators"><a class="anchor" href="#_3_2_2_wis2_to_gts_gateway_operators"></a>3.2.2 WIS2 to GTS gateway operators</h4>
 <div class="paragraph">
 <p>The gateway will be provided by designated Regional Telecommunication Hubs (RTH).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_technical_requirements_2"><a class="anchor" href="#_technical_requirements_2"></a>4.2.3. Technical requirements</h4>
+<h4 id="_3_2_3_technical_requirements"><a class="anchor" href="#_3_2_3_technical_requirements"></a>3.2.3 Technical requirements</h4>
 <div class="sect4">
-<h5 id="_for_wis_centres_wishing_to_stop_their_mss"><a class="anchor" href="#_for_wis_centres_wishing_to_stop_their_mss"></a>4.2.3.1. For WIS Centres wishing to stop their MSS</h5>
+<h5 id="_3_2_3_1_for_wis_centres_wishing_to_stop_their_message_switching_system"><a class="anchor" href="#_3_2_3_1_for_wis_centres_wishing_to_stop_their_message_switching_system"></a>3.2.3.1 For WIS centres wishing to stop their Message Switching System</h5>
 <div class="paragraph">
-<p>A Member planning to stop GTS transmission shall
-* provide their data in conformance with WIS2 Node operations on WIS2
-* for data that has previously been available on the GTS and that should continue to be available on the GTS
-<strong> indicate the GTS Abbreviated Header Line (AHL) of the bulletin in which the data is to be published.
-</strong> this is done by including the <code>gts</code> property in the WIS2 Notification Message (see example below).</p>
+<p>A Member planning to stop GTS transmission shall provide its data in conformance with WIS2 Node operations on WIS2. For data that have previously been available on the GTS, and should continue to be available on the GTS, the GTS Abbreviated Heading Line (AHL) of the bulletin in which the data are to be published needs to be indicated. This is done by including the GTS property in the WIS2 Notification Message (see example in the next paragraph).</p>
 </div>
 <div class="paragraph">
-<p>The <code>gts</code> property enables the WIS2 to GTS Gateway operator to easily identify data for republication on the GTS and the AHL of the associated data.</p>
+<p>The <code>gts</code> property enables the WIS2 to GTS gateway operator to easily identify data for republication on the GTS, and the AHL of the associated data. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -725,40 +725,31 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>For core data, the Global Cache will ensure their normal operation and the data to be relayed onto the <code>gts</code> will be available on the Global Cache.
-For recommended data, WIS Centre should allow unrestricted access from the gateways. They will inform WMO Secretariat, so that the gateway will establish the required subscriptions.</p>
+<p>For core data, the Global Cache will ensure their normal operation and the data to be relayed onto the GTS will be available on the Global Cache. For recommended data, WIS centres should allow unrestricted access from the gateways. WIS centres will inform the WMO Secretariat, so that the gateway will establish the required subscriptions.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_for_wis2_to_gts_gateway_operators"><a class="anchor" href="#_for_wis2_to_gts_gateway_operators"></a>4.2.3.2. For WIS2 to GTS Gateway operators</h5>
+<h5 id="_3_2_3_2_guidance_for_wis2_to_gts_gateway_operators"><a class="anchor" href="#_3_2_3_2_guidance_for_wis2_to_gts_gateway_operators"></a>3.2.3.2 Guidance for WIS2 to GTS gateway operators</h5>
 <div class="paragraph">
-<p>A WIS2 to GTS Gateway operator shall operate the following components throughout the transition period:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>A Data Consumer to retrieve data published on WIS2. All Data Consumer specifications apply to the WIS2 to GTS Gateway.</p>
-</li>
-<li>
-<p>A Message Switching System (MSS) with the required configuration to reach all RTHs.</p>
-</li>
-<li>
-<p>In addition, the gateway shall implement a mechanism so that the Data Consumer part can make available the data to be sent onto the GTS with the required TTAAii and CCCC to the local MSS. The Gateway&#8217;s MSS will process incoming data files, batching individual items into bulletins as per standard configuration, and publish those bulletins onto the GTS for onward distribution via RTHs on the MTN and beyond.</p>
-</li>
-</ol>
+<p>A WIS2 to GTS gateway operator shall operate the following components throughout the transition period:</p>
 </div>
 <div class="paragraph">
-<p>The mechanism depends on local implementation choices and may defer from one gateway to another.</p>
+<p>(a) A data consumer, to retrieve data published on WIS2. All data consumer specifications apply to the WIS2 to GTS gateway;</p>
 </div>
 <div class="paragraph">
-<p>Over the transition period, the list of TTAAii/CCCC to relay from WIS2 to GTS will grow when new NMC plan to stop their MSS.
-It means, that the gateway will require a method to allow the addition of batches of TTAAii/CCCC when new Centres are ready for the transition.</p>
+<p>(b) An MSS, with the required configuration to reach all RTHs;</p>
 </div>
 <div class="paragraph">
-<p>As it is expected for Data Consumers, and to ensure resilient operation, the Gateway should subscribe to notification messages from multiple Global Brokers.</p>
+<p>(c) The gateway’s MSS will process incoming data files, batching individual items into bulletins as per standard configuration, and publish those bulletins onto the GTS for onward distribution via RTHs on the Main Telecommunication Network (MTN) and beyond. The mechanism depends on local implementation choices and may differ from one gateway to another.</p>
 </div>
 <div class="paragraph">
-<p>During the transition period, other gateways will republish GTS data to WIS2. These <em>GTS to WIS2 Gateways</em> will publish via a designated <code>centre-id</code>. To avoid an infinite loop of republication, it is essential that a WIS2 to GTS Gateway <strong>does not</strong> subscribe to notification messages associated with a centre-id of a GTS to WIS2 Gateway.</p>
+<p>Over the transition period, the list of abbreviated headings (TTAAii/CCCC) to relay from WIS2 to GTS will grow when new NMCs plan to stop their MSS. It means that the gateway will require a method that allows for the addition of batches of abbreviated headings when new centres are ready for the transition.</p>
+</div>
+<div class="paragraph">
+<p>As it is expected for data consumers, and to ensure resilient operation, the gateway should subscribe to notification messages from multiple Global Brokers.</p>
+</div>
+<div class="paragraph">
+<p>During the transition period, other gateways will republish GTS data to WIS2. These GTS to WIS2 gateways will publish via a designated <code>centre-id</code>. To avoid an infinite loop of republication, it is essential that a WIS2 to GTS gateway does not subscribe to notification messages associated with the centre-id of a GTS to WIS2 gateway.</p>
 </div>
 </div>
 </div>
@@ -766,175 +757,164 @@ It means, that the gateway will require a method to allow the addition of batche
 </div>
 </div>
 <div class="sect1">
-<h2 id="_stopping_a_message_switching_system"><a class="anchor" href="#_stopping_a_message_switching_system"></a>5. Stopping a Message Switching System</h2>
+<h2 id="_4_stopping_a_message_switching_system"><a class="anchor" href="#_4_stopping_a_message_switching_system"></a>4. STOPPING A MESSAGE SWITCHING SYSTEM</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Thanks to the gateway functions described in previous chapter, WIS Centres currently using the GTS to exchange operational data, after having successfully implementing a WIS2 Node with the additional features required for the gateways to provide the gateway service, will be able to stop their Message Switching System, if they wish to do so, before the end of the complete migration.
-Gradually stopping all the MSS shall be done in an orderly and coordinated manner so that all data required by Members for their operations will continue to be available.</p>
+<p>Thanks to the gateway functions previously described, WIS centres that currently use the GTS to exchange operational data and that have successfully implemented a WIS2 Node with the additional features required for the gateways to provide the gateway service, will be able to stop their MSS, if they wish to do so, before the end of the complete migration. Gradually stopping of the whole MSS shall be done in an orderly and coordinated manner so that all data required by Members for their operations will continue to be available.</p>
 </div>
 <div class="paragraph">
-<p>The "Management of WIS1 and GTS" section of this Transition Guide recalls the various roles on the GTS (NMC, RTH, WMC). It also details when a Centre can stop its MSS. When all the conditions for a Centre are met, the following decommissioning procedure can be applied.</p>
+<p>Section 6 of the present guide recalls the various roles on the GTS (NMC, RTH, World Meteorological Centres (WMC)). It also details when a centre can stop its MSS. When all the conditions for a centre are met, the decommissioning procedure in Figure 2 can be applied.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/stopping-mss.png" alt="MSS decommissioning procedure">
+<img src="images/stopping-mss.png" alt="Figure 2. MSS decommissioning procedure">
 </div>
 <div class="title">Figure 2. MSS decommissioning procedure</div>
 </div>
 <div class="paragraph">
-<p>The sequence diagram details the list of actions required and the role of the various entities involved in this action.
-<strong>The responsible GISC for the Centre will have a key role to play.</strong> The GISC will have to ensure that the Centre has properly implemented the requirements and that the procedure is well understood by the Centre so that, no data is lost during the transition.
-WMO secretariat will act as the coordination body between all parties.
-It is crucial that all parties to strictly follow the agreed procedure.</p>
+<p>Figure 2 details the actions required and the role of the various entities involved in these actions. The GISC responsible for the centre will have a key role to play. The GISC will have to ensure that the centre has properly implemented the requirements and that the procedure is well understood by the centre so that no data are lost during the transition. The WMO Secretariat will act as the coordination body between all parties. It is crucial that all parties strictly follow the agreed procedure.</p>
 </div>
 <div class="paragraph">
-<p>It must also be noted that the final switch (stopping the MSS by the Centre and activating the gateway function for the TTAAii/CCCC of the WIS Centre) will happen at the same moment. The exact time and date will be chosen by the various parties under the control of WMO Secretariat.</p>
+<p>It must also be noted that the final switch (that is, the action of stopping the MSS of the WIS centre and activating the gateway function for the TTAAii/CCCC of the WIS centre) will take place at the same moment. The exact time and date will be chosen by the various parties, under the coordination of the WMO Secretariat.</p>
 </div>
 <div class="paragraph">
-<p>Upon request by a Centre, WMO Secretariat will inform the gateways when a new <code>centre-id</code> wishes to use the relay function as well as the required subscription topics. When requested by WMO Secretariat, the gateway will implement the following subscriptions:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Subscribe to notifications on the topic: <code>cache/a/wis2/{centre-id}/data/#</code>, where <code>{centre-id}</code> refers to a WIS2 Node wishing to stop the native GTS function.</p>
-</li>
-<li>
-<p>Potentially subscribe to  <code>origin/a/wis2/{centre-id}/data/recommended/#</code> for the WIS2 Node having also recommended data on the GTS.</p>
-</li>
-</ol>
+<p>Upon request by a centre, the WMO Secretariat will inform the gateways when a new <code>centre-id</code> wishes to use the relay function as well as the required subscription topics. When requested by the WMO Secretariat, the gateways will implement the following subscriptions:</p>
 </div>
 <div class="paragraph">
-<p><strong>Important</strong> Subscribing to these topics shouldn&#8217;t imply pushing the data onto the <code>gts</code> immediately. Making the data available on the <code>gts</code> will require the explicit approval from WMO Secretariat. It is up to the gateway operators to implement this "kill switch" (eg. disabling the subscription, blocking the flow between the Data Consumer and the MSS for those TTAAii/CCCC only, &#8230;&#8203;)</p>
+<p>(a) Subscribe to notifications on the topic: <code>cache/a/wis2/{centre-id}/data/#</code>, where <code>{centre-id}</code> refers to a WIS2 Node wishing to stop the native GTS function;</p>
+</div>
+<div class="paragraph">
+<p>(b) Potentially subscribe to <code>origin/a/wis2/{centre-id}/data/recommended/#</code> for the WIS2 Node also has recommended data on the GTS.</p>
+</div>
+<div class="paragraph">
+<p>It is important to note that subscribing to these topics should not imply pushing the data onto the GTS immediately. Making the data available on the GTS will require explicit approval from the WMO Secretariat. It is up to the gateway operators to implement this "kill switch" (for example, by disabling the subscription or blocking the flow between the data consumer and the MSS for those TTAAii/CCCC only).</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_management_of_wis1_and_gts"><a class="anchor" href="#_management_of_wis1_and_gts"></a>6. Management of WIS1 and GTS</h2>
+<h2 id="_5_management_of_wis2_and_gts"><a class="anchor" href="#_5_management_of_wis2_and_gts"></a>5. MANAGEMENT OF WIS2 AND GTS</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>During the transition to WIS2, maintaining a very high level of service of WIS1 and GTS is key to ensure that all Members and WIS Users, whether they have migrated to WIS2 or still relying on the GTS can send and receive the data required to run their operations.
-As described before, WIS2 to GTS Gateway and GTS to WIS2 Gateway will have a key role in this. The following describes what Members are required to do during this transition depending on their role on the GTS and WIS1.</p>
+<p>During the transition to WIS2, maintaining a very high level of service of WIS1 and GTS is key to ensuring that all Members and WIS users can send and receive the data required to run their operations, regardless of whether they have migrated to WIS2 or are still relying on the GTS. As described earlier, the WIS2 to GTS gateway and the GTS to WIS2 gateway will have a key role in this. The present section describes what Members are required to do during this transition, depending on their role within the GTS and WIS1.</p>
 </div>
 <div class="sect2">
-<h3 id="_maintenance_and_operation_of_message_switching_system_mss"><a class="anchor" href="#_maintenance_and_operation_of_message_switching_system_mss"></a>6.1. Maintenance and operation of Message Switching System (MSS)</h3>
+<h3 id="_5_1_maintenance_and_operation_of_message_switching_systems"><a class="anchor" href="#_5_1_maintenance_and_operation_of_message_switching_systems"></a>5.1 Maintenance and operation of Message Switching Systems</h3>
 <div class="sect3">
-<h4 id="_main_telecommunication_network"><a class="anchor" href="#_main_telecommunication_network"></a>6.1.1. Main Telecommunication Network</h4>
+<h4 id="_5_1_1_main_telecommunication_network"><a class="anchor" href="#_5_1_1_main_telecommunication_network"></a>5.1.1 Main Telecommunication Network</h4>
 <div class="paragraph">
-<p>During the migration to WIS2, the Main Telecommunication Network (MTN), linking together the World Meteorological Centres (WMCs) as well as designated Regional Telecommunication Hubs (RTHs); shall keep their Message Switching Systems (MSS) up and continue to publish data collecting the bulletins from their associated National Meteorological Centres (NMCs) and transmitting them in the appropriate form on the Main Telecommunication Network (MTN), either directly or through the appropriate WMC until the transition from GTS to WIS2 is completed.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_regional_telecommunication_hubs"><a class="anchor" href="#_regional_telecommunication_hubs"></a>6.1.2. Regional Telecommunication Hubs</h4>
-<div class="paragraph">
-<p>Regional Telecommunication Hubs (RTHs) shall keep their Message Switching Systems (MSS) up and continue to publish data Collecting the bulletins from their associated National Meteorological Centres (NMCs) and transmitting them in the appropriate form on the Main Telecommunication Network (MTN), either directly or through the appropriate WMC/RTH in GTS until all Members in their area of responsibility migrate from GTS to WIS2.</p>
-</div>
-<div class="paragraph">
-<p>When Regional Telecommunication Hubs (RTHs) have migrated to WIS2 Node and all Members in their area of responsibility (AoR) have migrated to WIS2, RTHs may decide to turn off their message switching system (MSS).</p>
-</div>
-<div class="paragraph">
-<p>In this case, they should contact the WMO Secretariat to switch-off their MSS in a coordinated manner.</p>
+<p>During the migration to WIS2, the Main Telecommunication Network (MTN), along with the WMCs and designated RTHs, shall keep their MSS operational. They shall continue to publish data, collect the bulletins from their associated NMCs and transmit them in the appropriate form on the MTN, either directly or through the appropriate WMC, until the transition from GTS to WIS2 is completed.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_national_meteorological_centres"><a class="anchor" href="#_national_meteorological_centres"></a>6.1.3. National Meteorological Centres</h4>
+<h4 id="_5_1_2_regional_telecommunication_hubs"><a class="anchor" href="#_5_1_2_regional_telecommunication_hubs"></a>5.1.2 Regional Telecommunication Hubs</h4>
+<div class="paragraph">
+<p>Regional Telecommunication Hubs (RTHs) shall keep their MSS operational and continue to publish data collecting the bulletins from their associated NMCs and transmitting them in the appropriate form on the MTN, either directly or through the appropriate WMC/RTH in GTS until all Members in their area of responsibility migrate from GTS to WIS2.</p>
+</div>
+<div class="paragraph">
+<p>When RTHs have migrated to WIS2 and all Members in their area of responsibility have migrated to WIS2, RTHs may decide to turn off their MSS. In this case, they should contact the WMO Secretariat to switch off their MSS in a coordinated manner.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_5_1_3_national_meteorological_centres"><a class="anchor" href="#_5_1_3_national_meteorological_centres"></a>5.1.3 National Meteorological Centres</h4>
 <div class="paragraph">
 <p>National Meteorological Centres (NMCs) shall operate a WIS2 Node to share their data and discovery metadata in WIS2.</p>
 </div>
 <div class="paragraph">
-<p>NMCs that have implemented a WIS2 Node, and published all the data transmitted on the GTS on WIS2 can, if they wish, turn off their GTS system MSS and stop transmitting data on the GTS.
-When NMCs decide to decommission and turn off their GTS system MSS and stop transmitting their data on GTS, they shall include the GTS properties in the Notification Message as described in the WIS2 to GTS gateway technical requirements.</p>
+<p>NMCs that have implemented a WIS2 Node and published all the data transmitted on the GTS on WIS2 may, if they wish, turn off their MSS, and stop transmitting data on the GTS. When NMCs decide to decommission and turn off their GTS MSS and stop transmitting their data on GTS, they shall include the GTS properties in the WIS2 Notification Message as described in the WIS2 to GTS gateway technical requirements.</p>
 </div>
 <div class="paragraph">
-<p>Note: this Notification Message update will concern only data that are already published in GTS. New data will be published only on WIS2.</p>
+<p><em>Note: This WIS2 Notification Messages with GTS properties will only concern data that are already published in GTS. New data will only be published on WIS2.</em></p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_maintenance_and_operation_of_wis1_catalogue_and_cache_by_giscs"><a class="anchor" href="#_maintenance_and_operation_of_wis1_catalogue_and_cache_by_giscs"></a>6.2. Maintenance and operation of WIS1 Catalogue and Cache by GISCs</h3>
+<h3 id="_5_2_maintenance_and_operation_of_wis1_catalogue_and_cache_by_global_information_system_centres"><a class="anchor" href="#_5_2_maintenance_and_operation_of_wis1_catalogue_and_cache_by_global_information_system_centres"></a>5.2 Maintenance and operation of WIS1 Catalogue and Cache by Global Information System Centres</h3>
 <div class="paragraph">
-<p>Each GISC shall maintain their Catalogue and Cache as long as WIS Users are using their services for operations. GISCs are invited to help users migrating to WIS2. When having succesfully migrated its users to WIS2, GISCs may stop their WIS1 Cache and Catalogue service and shall inform WMO Secretariat.</p>
+<p>Each Global Information System Centres (GISC) shall maintain their WIS1 Catalogue and Cache as long as WIS users are using their services for operations. GISCs are invited to help users migrate to WIS2. When a GISC has successfully migrated its users to WIS2, the GISC may stop its WIS1 Cache and Catalogue service and shall inform the WMO Secretariat.</p>
 </div>
 <div class="paragraph">
 <p>GISC Seoul and GISC Offenbach will continue to provide WIS1 discovery metadata and the WIS1 Catalogue until the transition from GTS and WIS1 to WIS2 is completed or deemed unnecessary when all WIS1 users have migrated to WIS2.</p>
 </div>
 <div class="paragraph">
-<p>Neither new discovery metadata nor changes on existing metadata will be allowed in the WIS1 Catalogue from 2025 onwards. New data will only be added in WCMP2 to the Global Discovery Catalogue for WIS2. A change in an existing metadata record in WIS1 will imply the migration of the metadata record, following the WCMP2 standard and associated best practices and key performance indicators, to WIS2.</p>
+<p>Neither new discovery metadata nor changes to existing metadata will be allowed in the WIS1 Catalogue from 2025 onwards. For WIS2, new metadata will only be added as WMO Core Metadata Profile version 2 (WCMP2) to the Global Discovery Catalogue.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_management_of_gts_abbreviated_headings"><a class="anchor" href="#_management_of_gts_abbreviated_headings"></a>6.3. Management of GTS Abbreviated Headings</h3>
+<h3 id="_5_3_management_of_gts_abbreviated_headings"><a class="anchor" href="#_5_3_management_of_gts_abbreviated_headings"></a>5.3 Management of GTS abbreviated headings</h3>
 <div class="paragraph">
-<p>The GTS abbreviated headings are described in the Manual on the Global Telecommunication System (WMO-No. 386). In particular the data designators T1T2A1A2ii are defined in Attachement II.5 of this Manual. The GTS abbreviated headings are not required in WIS2 and their use is limited to the exchange of data on the GTS. Starting from WIS2 becoming operational any further evolution of the GTS, including the transmission of new data, will not be permitted. Therefore the Manual on GTS will no longer be updated from 31 December 2024.
-The Weather Reporting (WMO-No. 9) Volume C1 contains the list of meteorological bulletins exchanged on the GTS. There is a requirement for Members to update Volume C1 every time a change in the bulletins takes place, but only a few Members are doing it with regularity and therefore the list is incomplete and is not consistent with the bulletins effectively exchanged on GTS. With the start of the WIS2 operational phase there will not be any change in the list of meteorological bulletins transmitted on GTS, therefore Volume C1 will not be updated any longer from 31 December 2024.</p>
+<p>The GTS abbreviated headings are described in the <a href="https://library.wmo.int/idurl/4/35800"><em>Manual on the Global Telecommunication System</em></a> (WMO-No. 386) (<em>Manual on GTS</em>). The data designators T1T2A1A2ii are defined in Attachment II.5 of the Manual on GTS. The GTS abbreviated headings are not required in WIS2, and their use is limited to the exchange of data on the GTS. Once WIS2 becomes operational, any further evolution of the GTS, including the transmission of new data, will not be permitted. Therefore, the Manual on GTS will no longer be updated from 31 December 2024.
+The <a href="https://library.wmo.int/idurl/4/55155"><em>Weather Reporting</em></a> (WMO-No. 9), Volume C1, contains the list of meteorological bulletins exchanged on the GTS. Members are required to update Volume C1 every time a change in the bulletins takes place, however only a few Members are doing so with regularity. The list is therefore incomplete and is not consistent with the bulletins effectively exchanged on GTS. With the start of the WIS2 operational phase, there will not be any change in the list of meteorological bulletins transmitted on GTS, therefore Volume C1 will not be updated any longer from 31 December 2024.</p>
 </div>
 <div class="sect3">
-<h4 id="_gts_headings_for_icao_aftn"><a class="anchor" href="#_gts_headings_for_icao_aftn"></a>6.3.1. GTS Headings for ICAO (AFTN)</h4>
+<h4 id="_5_3_1_gts_headings_for_international_civil_aviation_authority"><a class="anchor" href="#_5_3_1_gts_headings_for_international_civil_aviation_authority"></a>5.3.1 GTS headings for International Civil Aviation Authority</h4>
 <div class="paragraph">
-<p>The attachement II.5 of the Manual on GTS (WMO-No. 386) containing the data designators T1T2A1A2ii currently used for transmission of data on GTS are also used for the same purpose on AFTN by ICAO. There is a requirement for WMO to maintain the data designators for ICAO data transmission purposes. To satisfy this requirement WMO Secretariat will liase with ICAO to allow the addition of new data designators when required by ICAO. The new data designators requested by ICAO will not be published in the Manual on GTS (WMO No. 386), a different mean for their publication will be agreed by WMO and ICAO.</p>
+<p>Attachment II.5 of the Manual on GTS containing the data designators T1T2A1A2ii currently used for transmission of data on GTS are also used for the same purpose on the Aeronautical Fixed Telecommunications Network (AFTN) by the International Civil Aviation Authority (ICAO). There is a requirement for WMO to maintain the data designators for ICAO data transmission purposes. To satisfy this requirement, the WMO Secretariat will liaise with ICAO to allow the addition of new data designators when required by ICAO. The new data designators requested by ICAO will not be published in the Manual on GTS, but rather a different means for their publication will be agreed upon by WMO and ICAO.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_management_of_wis_centres"><a class="anchor" href="#_management_of_wis_centres"></a>7. Management of WIS centres</h2>
+<h2 id="_6_management_of_wis_centres"><a class="anchor" href="#_6_management_of_wis_centres"></a>6. MANAGEMENT OF WIS CENTRES</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_national_centres"><a class="anchor" href="#_national_centres"></a>7.1. National Centres</h3>
+<h3 id="_6_1_national_centres"><a class="anchor" href="#_6_1_national_centres"></a>6.1 National Centres</h3>
 <div class="paragraph">
-<p>National Centres (NCs) can start migrating to WIS2 from January 2025 when WIS2 will be operational. It is recommended to start planning and preparation in advance and in a way that the migration will be completed preferably by 2030 and not later than 2033. The migration to WIS2 of a National Centre can be considered complete when at least one WIS2 node for the NC is operational and all the datasets transmitted on GTS are also shared on WIS2 in compliance with the technical requirements described in the Manual on WIS (WMO-No. 1060) Vol. II and the Guide to WIS (WMO-No. 1061).
-A National Centre fully migrated to WIS2 shall communicate to the Secretariat that its migration is complete,and shall keep the WIS1 and GTS operational in parallel with the WIS2 systems until reception of a communication from the Secretariat allowing the switch off of the WIS1 and GTS systems.</p>
+<p>National Centres (NCs) can start migrating to WIS2 from January 2025 when WIS2 will be operational. It is recommended to start planning and preparation in advance and in a way that the migration will be completed preferably by 2030 and not later than 2033. The migration to WIS2 by a National Centre can be considered complete when at least one WIS2 Node for the NC is operational and all the datasets transmitted on GTS are also shared on WIS2 in compliance with the technical requirements described in the <em>Manual on WIS</em>, Volume II and the <em>Guide to WIS</em>, Volume II. A National Centre that has fully migrated to WIS2 shall communicate to the WMO Secretariat that its migration is complete and shall keep the WIS1 and GTS operational in parallel with the WIS2 systems until reception of a communication from the WMO Secretariat allowing the switch from the WIS1 and GTS systems.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_data_collection_and_production_centres"><a class="anchor" href="#_data_collection_and_production_centres"></a>7.2. Data Collection and Production Centres</h3>
+<h3 id="_6_2_data_collection_and_production_centres"><a class="anchor" href="#_6_2_data_collection_and_production_centres"></a>6.2 Data Collection and Production Centres</h3>
 <div class="paragraph">
-<p>Data Collection and Production Centres (DCPCs) can start migrating to WIS2 from January 2025 when WIS2 will be operational. It is recommended to start planning and preparation in advance and in a way that the migration will be completed preferably by 2030 and not later than 2033. The migration to WIS2 of a DCPC can be considered complete when at least one WIS2 node for the DCPC is operational and all the datasets transmitted on GTS are also shared on WIS2 in compliance with the technical requirements described in the Manual on WIS (WMO-No. 1060) Vol. II and the Guide to WIS (WMO-No. 1061).
-A DCPC fully migrated to WIS2: shall communicate to the Secretariat that its migration is complete,and shall keep the WIS1 and GTS operational in parallel with the WIS2 systems until reception of a communication from the Secretariat allowing the switch off of the WIS1 and GTS systems.</p>
+<p>Data Collection and Production Centres (DCPCs) can start migrating to WIS2 from January 2025 when WIS2 will be operational. It is recommended to start planning and preparation in advance and in a way that the migration will be completed preferably by 2030 and not later than 2033. The migration to WIS2 by a DCPC can be considered complete when at least one WIS2 Node for the DCPC is operational and all the datasets transmitted on GTS are also shared on WIS2 in compliance with the technical requirements described in the <em>Manual on WIS</em>, Volume II and the <em>Guide to WIS</em>, Volume II. A DCPC that has fully migrated to WIS2 shall communicate to the WMO Secretariat that its migration is complete and shall keep the WIS1 and GTS operational in parallel with the WIS2 systems until reception of a communication from the WMO Secretariat allowing the switch from the WIS1 and GTS systems.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_global_information_system_centres"><a class="anchor" href="#_global_information_system_centres"></a>7.3. Global Information System Centres</h3>
+<h3 id="_6_3_global_information_system_centres"><a class="anchor" href="#_6_3_global_information_system_centres"></a>6.3 Global Information System Centres</h3>
 <div class="paragraph">
-<p>A Global Information System Centre (GISC) shall support Members in its area of responsibility in the migration and operation of WIS2.</p>
+<p>A GISC shall support Members in its area of responsibility in the migration and operation of WIS2.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_references"><a class="anchor" href="#_references"></a>8. References</h2>
+<h2 id="_7_references"><a class="anchor" href="#_7_references"></a>7. References</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_normative"><a class="anchor" href="#_normative"></a>8.1. Normative</h3>
+<h3 id="_7_1_normative"><a class="anchor" href="#_7_1_normative"></a>7.1 Normative</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><a id="wmo-1060"></a> WMO: Manual on WIS (WMO No. 1060), Vol II. WIS 2.0</p>
+<p><a href="https://library.wmo.int/idurl/4/68731"><em>Manual on the WMO Information System</em></a> (WMO-No. 1060), Volume II</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Appendix D: WIS2 Topic Hierarchy (WTH)</p>
 </li>
 <li>
-<p><a id="wmo-wcmp2"></a> WMO: WMO Core Metadata Profile version 2 (WCMP2) <sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
+<p>Appendix E: WIS2 Notification Message (WNM) format</p>
 </li>
 <li>
-<p><a id="wmo-wth"></a> WMO: WIS2 Topic Hierarchy (WTH) <sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p>
+<p>Appendix F: WMO Core Metadata Profile version 2 (WCMP2)</p>
 </li>
 <li>
-<p><a id="wmo-wnm"></a> WMO: WIS2 Notification Message (WNM) format <sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p>
+<p>WIS2 Metric Hierarchy (WMH)<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
 </li>
-<li>
-<p><a id="wmo-wmh"></a> WMO: WIS2 Metric Hierarchy (WMH) <sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p>
+</ul>
+</div>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_informative"><a class="anchor" href="#_informative"></a>8.2. Informative</h3>
+<h3 id="_7_2_informative"><a class="anchor" href="#_7_2_informative"></a>7.2 Informative</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><a id="wmo-1213"></a> WMO: WMO Information System 2.0 Strategy (WMO No. 1213) <sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></p>
+<p><a href="https://library.wmo.int/idurl/4/56019"><em>WMO Information System 2.0 Strategy</em></a> (WMO-No. 1213)</p>
 </li>
 <li>
-<p><a id="wmo-1239"></a> WMO: WMO Guidelines on Emerging Data Issues (WMO No. 1239) <sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup></p>
+<p><a href="https://library.wmo.int/idurl/4/56904"><em>WMO Guidelines on Emerging Data Issues</em></a> (WMO-No. 1239)</p>
 </li>
 </ul>
 </div>
@@ -951,27 +931,12 @@ A DCPC fully migrated to WIS2: shall communicate to the Secretariat that its mig
 <a href="#_footnoteref_2">2</a>. <a href="https://community.wmo.int/governance/commission-membership/infcom" class="bare">https://community.wmo.int/governance/commission-membership/infcom</a>
 </div>
 <div class="footnote" id="_footnotedef_3">
-<a href="#_footnoteref_3">3</a>. <a href="https://wmo-im.github.io/wcmp2" class="bare">https://wmo-im.github.io/wcmp2</a>
-</div>
-<div class="footnote" id="_footnotedef_4">
-<a href="#_footnoteref_4">4</a>. <a href="https://github.com/wmo-im/wis2-topic-hierarchy" class="bare">https://github.com/wmo-im/wis2-topic-hierarchy</a>
-</div>
-<div class="footnote" id="_footnotedef_5">
-<a href="#_footnoteref_5">5</a>. <a href="https://wmo-im.github.io/wis2-notification-message" class="bare">https://wmo-im.github.io/wis2-notification-message</a>
-</div>
-<div class="footnote" id="_footnotedef_6">
-<a href="#_footnoteref_6">6</a>. <a href="https://github.com/wmo-im/wis2-metric-hierarchy" class="bare">https://github.com/wmo-im/wis2-metric-hierarchy</a>
-</div>
-<div class="footnote" id="_footnotedef_7">
-<a href="#_footnoteref_7">7</a>. <a href="https://library.wmo.int/index.php?lvl=notice_display&amp;id=20422" class="bare">https://library.wmo.int/index.php?lvl=notice_display&amp;id=20422</a>
-</div>
-<div class="footnote" id="_footnotedef_8">
-<a href="#_footnoteref_8">8</a>. <a href="https://library.wmo.int/index.php?lvl=notice_display&amp;id=21644" class="bare">https://library.wmo.int/index.php?lvl=notice_display&amp;id=21644</a>
+<a href="#_footnoteref_3">3</a>. <a href="https://github.com/wmo-im/wis2-metric-hierarchy" class="bare">https://github.com/wmo-im/wis2-metric-hierarchy</a>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-02-18 13:33:04 UTC
+Last updated 2024-07-23 12:09:58 UTC
 </div>
 </div>
 </body>
