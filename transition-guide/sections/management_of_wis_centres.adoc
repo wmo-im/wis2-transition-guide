@@ -1,15 +1,13 @@
-== Management of WIS centres
+== 6. MANAGEMENT OF WIS CENTRES
 
-=== National Centres
+=== 6.1 National Centres
 
-National Centres (NCs) can start migrating to WIS2 from January 2025 when WIS2 will be operational. It is recommended to start planning and preparation in advance and in a way that the migration will be completed preferably by 2030 and not later than 2033. The migration to WIS2 of a National Centre can be considered complete when at least one WIS2 node for the NC is operational and all the datasets transmitted on GTS are also shared on WIS2 in compliance with the technical requirements described in the Manual on WIS (WMO-No. 1060) Vol. II and the Guide to WIS (WMO-No. 1061). 
-A National Centre fully migrated to WIS2 shall communicate to the Secretariat that its migration is complete,and shall keep the WIS1 and GTS operational in parallel with the WIS2 systems until reception of a communication from the Secretariat allowing the switch off of the WIS1 and GTS systems.
+National Centres (NCs) can start migrating to WIS2 from January 2025 when WIS2 will be operational. It is recommended to start planning and preparation in advance and in a way that the migration will be completed preferably by 2030 and not later than 2033. The migration to WIS2 by a National Centre can be considered complete when at least one WIS2 Node for the NC is operational and all the datasets transmitted on GTS are also shared on WIS2 in compliance with the technical requirements described in the _Manual on WIS_, Volume II and the _Guide to WIS_, Volume II. A National Centre that has fully migrated to WIS2 shall communicate to the WMO Secretariat that its migration is complete and shall keep the WIS1 and GTS operational in parallel with the WIS2 systems until reception of a communication from the WMO Secretariat allowing the switch from the WIS1 and GTS systems.
 
-=== Data Collection and Production Centres 
+=== 6.2 Data Collection and Production Centres 
 
-Data Collection and Production Centres (DCPCs) can start migrating to WIS2 from January 2025 when WIS2 will be operational. It is recommended to start planning and preparation in advance and in a way that the migration will be completed preferably by 2030 and not later than 2033. The migration to WIS2 of a DCPC can be considered complete when at least one WIS2 node for the DCPC is operational and all the datasets transmitted on GTS are also shared on WIS2 in compliance with the technical requirements described in the Manual on WIS (WMO-No. 1060) Vol. II and the Guide to WIS (WMO-No. 1061). 
-A DCPC fully migrated to WIS2: shall communicate to the Secretariat that its migration is complete,and shall keep the WIS1 and GTS operational in parallel with the WIS2 systems until reception of a communication from the Secretariat allowing the switch off of the WIS1 and GTS systems.
+Data Collection and Production Centres (DCPCs) can start migrating to WIS2 from January 2025 when WIS2 will be operational. It is recommended to start planning and preparation in advance and in a way that the migration will be completed preferably by 2030 and not later than 2033. The migration to WIS2 by a DCPC can be considered complete when at least one WIS2 Node for the DCPC is operational and all the datasets transmitted on GTS are also shared on WIS2 in compliance with the technical requirements described in the _Manual on WIS_, Volume II and the _Guide to WIS_, Volume II. A DCPC that has fully migrated to WIS2 shall communicate to the WMO Secretariat that its migration is complete and shall keep the WIS1 and GTS operational in parallel with the WIS2 systems until reception of a communication from the WMO Secretariat allowing the switch from the WIS1 and GTS systems.
 
-=== Global Information System Centres 
+=== 6.3 Global Information System Centres 
 
-A Global Information System Centre (GISC) shall support Members in its area of responsibility in the migration and operation of WIS2. 
+A GISC shall support Members in its area of responsibility in the migration and operation of WIS2.
