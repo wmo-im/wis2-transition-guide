@@ -18,9 +18,9 @@ When RTHs have migrated to WIS2 and all Members in their area of responsibility 
 
 National Meteorological Centres (NMCs) shall operate a WIS2 Node to share their data and discovery metadata in WIS2.
 
-NMCs that have implemented a WIS2 Node and published all the data transmitted on the GTS on WIS2 may, if they wish, turn off their MSS, and stop transmitting data on the GTS. When NMCs decide to decommission and turn off their GTS MSS and stop transmitting their data on GTS, they shall include the GTS properties in the WIS2 Notification Message as described in the WIS2 to GTS gateway technical requirements.
+NMCs that have implemented a WIS2 Node and published all the data transmitted on the GTS on WIS2 may, if they wish, turn off their MSS, and stop transmitting data on the GTS. When NMCs decide to decommission and turn off their GTS MSS and stop transmitting their data on GTS, they shall include the GTS properties in the WIS2 Notification Message as described in the WIS2 to GTS gateway technical requirements (section 3.2.3).
 
-_Note: This WIS2 Notification Messages with GTS properties will only concern data that are already published in GTS. New data will only be published on WIS2._
+_Note: The WIS2 Notification Messages with GTS properties will only concern data that are already published in GTS. New data will only be published on WIS2._
 
 === 5.2 Maintenance and operation of WIS1 Catalogue and Cache by Global Information System Centres
 

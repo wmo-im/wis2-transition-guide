@@ -3,6 +3,6 @@
 The WMO Executive Council, through https://library.wmo.int/idviewer/66258/1147[Resolution 34 (EC-76)] - Implementation plan update of the WMO Information System 2.0, endorsed the WMO Information System 2.0 (WIS2) implementation plan. The Resolution also recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it, in order to be ready for a pre-operational phase in 2024, and then for the transition starting in 2025. This plan will be implemented according to the schedule provided in Figure 1. The pilot phase was completed at the end of 2023, with several Members collaborating in building the WIS2 infrastructure. Each Member had a different role in the WIS2 framework and implemented a specific component. Starting in January 2024, the implementation of WIS2 entered the pre-operational phase, and the WIS2 services shall be ready to transition to an operational configuration, which is critical to ensure that WIS2 can serve the WMO community operationally, from the beginning of 2025. Migration to WIS2 is planned to occur between 2025 and 2030, with an expected progress rate of up to 90%. The GTS is planned to be decommissioned by 2033.
 
 .WIS2 implementation timeline
-image::images/wis2-timeline.png[Figure 1. WIS2 implementation timeline.]
+image::images/wis2-timeline.png[WIS2 implementation timeline]
 
 Key: NCs = National Centres; DCPCs = Data Collection and Production Centres; GISCs = Global Information System Centres
