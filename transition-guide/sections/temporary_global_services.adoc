@@ -2,7 +2,7 @@
 
 === 3.1 GTS to WIS2 gateway
 
-The Executive Council, through https://library.wmo.int/idviewer/66258/1147[Resolution 34 (EC-76)], recognized the importance of establishing a pilot phase to develop the WIS2 infrastructure and begin testing it, in order to be ready for a pre-operational phase in 2024, and then for the transition starting in 2025. According to the WIS2 implementation plan, the GTS will be decommissioned by 2033 and NMHSs will use the WIS2 platform for data exchange, with the transition starting in 2025.
+According to the WIS2 implementation plan, the GTS will be decommissioned by 2033 and NMHSs will use the WIS2 platform for data exchange, with the transition starting in 2025.
 During the transition period, in order to avoid some WIS centres being forced to run both data-sharing frameworks (WIS2 and GTS) simultaneously, and given the challenges associated with maintaining two operational systems for the same purpose, a gateway from GTS to WIS2 has been designed. The gateway takes into account the time required for Members to migrate to the new system and minimizes the time a Member has to operate both systems in parallel.
 
 
@@ -27,7 +27,7 @@ To ensure resilient operation, there will be more than one GTS to WIS2 gateway.
   - Example for JMA: 
       ``origin/a/wis2/jp-jma-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC``
 
-  - The ``T1/T2/A1/A2/ii/CCCC`` above is derived from the headers of the data received on the GTS.
+  - The ``T1/T2/A1/A2/ii/CCCC`` above is derived from the headers of the data received on the GTS
 
 * The Global Caches will cache data that is being published using ``core`` in the topic hierarchy;
 * Data consumers receiving the GTS data through WIS2 will need to be able to handle duplicates. This is consistent with the current practices of handling duplicate messages on the GTS;
@@ -43,7 +43,7 @@ The WIS2 implementation plan outlines a gradual transition of data exchange from
 
 When a National Meteorological Centre (NMC), running a Message Switching System and exchanging data on the GTS, has implemented WIS2, it may wish to stop sending its data directly on the GTS so that it can stop the MSS.
 
-The WIS2 to GTS gateway will ensure that only the data currently available on the GTS and whose Member is wishing to stop its MSS will be re-published onto the GTS, so that no data is lost during the transition.
+For a Member that wishes to stop its MSS, the WIS2 to GTS gateway will ensure that only data currently available on the GTS will be re-published on the GTS, so that no data is lost during the transition.
 
 To ensure resilient operation, there will be more than one WIS2 to GTS gateway.
 
@@ -53,7 +53,7 @@ The gateway will be provided by designated Regional Telecommunication Hubs (RTH)
 ==== 3.2.3 Technical requirements
 ===== 3.2.3.1 For WIS centres wishing to stop their Message Switching System
 
-A Member planning to stop GTS transmission shall provide its data in conformance with WIS2 Node operations on WIS2. For data that have previously been available on the GTS, and should continue to be available on the GTS, the GTS Abbreviated Heading Line (AHL) of the bulletin in which the data are to be published needs to be indicated. This is done by including the GTS property in the WIS2 Notification Message (see example in the next paragraph).
+A Member planning to stop GTS transmission shall provide its data in conformance with WIS2 Node operations on WIS2. For data that have previously been available on the GTS, and should continue to be available on the GTS, the GTS Abbreviated Heading Line (AHL) of the bulletin in which the data are to be published needs to be indicated. This is done by including the ``gts`` property in the WIS2 Notification Message (see example in the next paragraph).
 
 The ``gts`` property enables the WIS2 to GTS gateway operator to easily identify data for republication on the GTS, and the AHL of the associated data. For example:
   
@@ -82,16 +82,16 @@ A WIS2 to GTS gateway operator shall operate the following components throughout
 
 Over the transition period, the list of abbreviated headings (TTAAii/CCCC) to relay from WIS2 to GTS will grow when new NMCs plan to stop their MSS. It means that the gateway will require a method that allows for the addition of batches of abbreviated headings when new centres are ready for the transition.
 
-As it is expected for data consumers, and to ensure resilient operation, the gateway should subscribe to notification messages from multiple Global Brokers.
+To ensure resilient operation, the gateway should subscribe to notification messages from multiple Global Brokers.
 
-During the transition period, other gateways will republish GTS data to WIS2. These GTS to WIS2 gateways will publish via a designated ``centre-id``. To avoid an infinite loop of republication, it is essential that a WIS2 to GTS gateway does not subscribe to notification messages associated with the centre-id of a GTS to WIS2 gateway.
+During the transition period, other gateways will republish GTS data to WIS2. These GTS to WIS2 Gateways will publish via a designated ``centre-id``. To avoid an infinite loop of republication, it is essential that a WIS2 to GTS gateway does not subscribe to notification messages associated with the centre-id of a GTS to WIS2 gateway.
 
 
 == 4. STOPPING A MESSAGE SWITCHING SYSTEM
 
 Thanks to the gateway functions previously described, WIS centres that currently use the GTS to exchange operational data and that have successfully implemented a WIS2 Node with the additional features required for the gateways to provide the gateway service, will be able to stop their MSS, if they wish to do so, before the end of the complete migration. Gradually stopping of the whole MSS shall be done in an orderly and coordinated manner so that all data required by Members for their operations will continue to be available.
 
-Section 6 of the present guide recalls the various roles on the GTS (NMC, RTH, World Meteorological Centres (WMC)). It also details when a centre can stop its MSS. When all the conditions for a centre are met, the decommissioning procedure in Figure 2 can be applied.
+Section 6 of the present guide describes the various roles of the GTS (NMC, RTH, World Meteorological Centres (WMC)). It also details when a centre can stop its MSS. When all the conditions for a centre are met, the decommissioning procedure in Figure 2 can be applied.
 
 .MSS decommissioning procedure
 image::images/stopping-mss.png[Figure 2. MSS decommissioning procedure]
@@ -100,10 +100,10 @@ Figure 2 details the actions required and the role of the various entities invol
 
 It must also be noted that the final switch (that is, the action of stopping the MSS of the WIS centre and activating the gateway function for the TTAAii/CCCC of the WIS centre) will take place at the same moment. The exact time and date will be chosen by the various parties, under the coordination of the WMO Secretariat.
 
-Upon request by a centre, the WMO Secretariat will inform the gateways when a new ``centre-id`` wishes to use the relay function as well as the required subscription topics. When requested by the WMO Secretariat, the gateways will implement the following subscriptions:
+Upon request by a centre, the WMO Secretariat will inform the gateways when a new ``centre-id`` wishes to use the relay function, including the required subscription topics. When requested by the WMO Secretariat, the gateways will implement the following subscriptions:
 
 (a) Subscribe to notifications on the topic: ``cache/a/wis2/{centre-id}/data/#``, where ``{centre-id}`` refers to a WIS2 Node wishing to stop the native GTS function;
 
-(b) Potentially subscribe to ``origin/a/wis2/{centre-id}/data/recommended/#`` for the WIS2 Node also has recommended data on the GTS.
+(b) Potentially subscribe to ``origin/a/wis2/{centre-id}/data/recommended/#`` where the WIS2 Node also has recommended data on the GTS.
 
 It is important to note that subscribing to these topics should not imply pushing the data onto the GTS immediately. Making the data available on the GTS will require explicit approval from the WMO Secretariat. It is up to the gateway operators to implement this "kill switch" (for example, by disabling the subscription or blocking the flow between the data consumer and the MSS for those TTAAii/CCCC only).
