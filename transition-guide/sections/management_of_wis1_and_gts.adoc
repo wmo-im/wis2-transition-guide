@@ -1,4 +1,4 @@
-== 5. MANAGEMENT OF WIS2 AND GTS
+== 5. MANAGEMENT OF WIS1 AND GTS
 
 During the transition to WIS2, maintaining a very high level of service of WIS1 and GTS is key to ensuring that all Members and WIS users can send and receive the data required to run their operations, regardless of whether they have migrated to WIS2 or are still relying on the GTS. As described earlier, the WIS2 to GTS gateway and the GTS to WIS2 gateway will have a key role in this. The present section describes what Members are required to do during this transition, depending on their role within the GTS and WIS1.
 
