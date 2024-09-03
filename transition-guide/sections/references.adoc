@@ -2,11 +2,11 @@
 
 === 7.1 Normative
 
-* https://library.wmo.int/idurl/4/68731[_Manual on the WMO Information System_] (WMO-No. 1060), Volume II
+* https://library.wmo.int/idurl/4/68731[_Manual on the WMO Information System_] (WMO-No. 1060), Volume II  (the following appendices were adopted in Resolution 15 of the seventy-eighth session of the Executive Council (EC-78) and are available in the 2024 edition of the _Manual on the WMO Information System_):
 ** Appendix D: WIS2 Topic Hierarchy (WTH) 
 ** Appendix E: WIS2 Notification Message (WNM) format
 ** Appendix F: WMO Core Metadata Profile version 2 (WCMP2) 
-** WIS2 Metric Hierarchy (WMH)footnote:[https://github.com/wmo-im/wis2-metric-hierarchy]
+** WIS2 Metric Hierarchy (WMH):https://github.com/wmo-im/wis2-metric-hierarchy
 
 === 7.2 Informative
 
