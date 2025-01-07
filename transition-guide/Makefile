@@ -1,4 +1,4 @@
-FILE_BASENAME=wis2-transition-guide-DRAFT
+FILE_BASENAME=wis2-transition-guide-APPROVED
 
 html:
 	asciidoctor --trace -o ${FILE_BASENAME}.html index.adoc
