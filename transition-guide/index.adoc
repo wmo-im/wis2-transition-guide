@@ -1,6 +1,6 @@
-:title: Provisions for the transition from the WMO Information System (WIS)  1.0 and Global Telecommunication System to WIS  2.0 (DRAFT)
+:title: Provisions for the transition from the WMO Information System (WIS)  1.0 and Global Telecommunication System to WIS  2.0 (APPROVED)
 :titletext: {title}
-:version: 2024-07-15-approved by EC-78
+:version: 1.0.0
 :date: {docdate}
 :copyright: Copyright © 2024 World Meteorological Organization (WMO)
 :doctype: book
