@@ -8,7 +8,7 @@ on:
     - 'transition-guide/**'
 
 env:
-  FILE_BASENAME: wis2-transition-guide-DRAFT
+  FILE_BASENAME: wis2-transition-guide-APPROVED
 
 jobs:
   build-wis2-transition-guide:
