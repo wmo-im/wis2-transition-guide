@@ -1,4 +1,4 @@
-:title: Provisions for the transition from the WMO Information System (WIS)  1.0 and Global Telecommunication System to WIS  2.0 (APPROVED)
+:title: Provisions for the transition from the WMO Information System (WIS) 1.0 and Global Telecommunication System to WIS  2.0 (APPROVED)
 :titletext: {title}
 :version: 1.0.0
 :date: {docdate}
