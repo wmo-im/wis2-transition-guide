@@ -27,10 +27,7 @@ asciidoctor --trace -o wis2-transition-guide.html index.adoc
 asciidoctor --trace -r asciidoctor-pdf --trace -b pdf -o wis2-transition-guide.pdf index.adoc
 # create Word document
 asciidoctor --trace --backend docbook --out-file - index.adoc | pandoc --from docbook --to docx --output wis2-transition-guide.docx
-```
-
 # check links
-```bash
 find . -name "???.adoc" -exec asciidoc-link-check -p -c asciidoc-link-check-config.json {} \;
 ```
 
