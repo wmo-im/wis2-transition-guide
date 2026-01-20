@@ -21,18 +21,18 @@ jobs:
           && sudo apt-get install -y pandoc \
           && sudo gem install asciidoctor asciidoctor-pdf
       - name: checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@master
       - name: build documentation
         run: |
           mkdir -p /tmp/wis2-transition-guide/transition-guide/images \
           && cd transition-guide \
-          && asciidoctor --trace -o /tmp/wis2-transition-guide/transition-guide/${FILE_BASENAME}.html index.adoc \
+          && asciidoctor --trace -a stylesheet=css/wmo-asciidoc.css -o /tmp/wis2-transition-guide/transition-guide/${FILE_BASENAME}.html index.adoc \
           && asciidoctor --trace --backend docbook --out-file - index.adoc | pandoc --from docbook --to docx --output /tmp/wis2-transition-guide/transition-guide/${FILE_BASENAME}.docx \
           && asciidoctor --trace -r asciidoctor-pdf --trace -b pdf -o /tmp/wis2-transition-guide/transition-guide/${FILE_BASENAME}.pdf index.adoc \
           && cp images/*.png /tmp/wis2-transition-guide/transition-guide/images \
           && cd ..
       - name: checkout gh-pages branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@master
         with:
           ref: gh-pages
       - name: update gh-pages branch and publish
