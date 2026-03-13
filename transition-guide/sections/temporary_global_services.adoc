@@ -107,3 +107,11 @@ Upon request by a centre, the WMO Secretariat will inform the gateways when a ne
 (b) Potentially subscribe to ``origin/a/wis2/{centre-id}/data/recommended/#`` where the WIS2 Node also has recommended data on the GTS.
 
 It is important to note that subscribing to these topics should not imply pushing the data onto the GTS immediately. Making the data available on the GTS will require explicit approval from the WMO Secretariat. It is up to the gateway operators to implement this "kill switch" (for example, by disabling the subscription or blocking the flow between the data consumer and the MSS for those TTAAii/CCCC only).
+
+To complete the migration to WIS2, a WIS centre must be able to consume data from WIS2. This requirement is described in the _Guide to WIS_, Volume II, section 1.2 _Information for the data consumer_. 
+
+Data published natively on WIS2 will be advertised through notification messages published on the standard WIS2 Topic Hierarchy described in the _Manual on WIS_, Volume II, Appendix D. 
+
+Data published on the GTS is re-published on WIS2 by the GTS-to-WIS2 gateways using the so-called _GTS transition topics_ (e.g., ``[origin|cache]/a/wis2/de-dwd-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC``). As a result, some data is advertised through notification messages published on both native WIS2 topics _and_ GTS transition topics. 
+
+Where data is natively available on WIS2, data consumers should subscribe to notifications from WIS2 native topics in preference to the GTS transition topics. This avoids potential data loss that may occur when GTS-to-WIS2 gateways periodically discontinue the publication of notification messages on GTS transition topics for data originating from WIS centres that have completed their migration. Once the GTS to WIS2 transition is complete, notification messages will no longer be published on the GTS transition topics.
