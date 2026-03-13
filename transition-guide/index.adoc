@@ -21,6 +21,7 @@
 |Date: {date}
 |Version: {version}
 |Document status: APPROVED
+|Revision history: see <<_revision_history,Annex A>>
 |Document location: https://wmo-im.github.io/wis2-transition-guide/transition-guide/wis2-transition-guide-APPROVED.html
 |WMO publication location: https://library.wmo.int/idurl/4/69050
 |Standing Committee on Information Management and Technology (SC-IMT)footnote:[https://community.wmo.int/governance/commission-membership/commission-observation-infrastructures-and-information-systems-infcom/commission-infrastructure-officers/infcom-management-group/standing-committee-information-management-and-technology-sc-imt]
@@ -47,3 +48,7 @@ include::sections/management_of_gts_ahl.adoc[]
 include::sections/management_of_wis_centres.adoc[]
 
 include::sections/references.adoc[]
+
+include::sections/references.adoc[]
+
+include::sections/annex_a.adoc[]

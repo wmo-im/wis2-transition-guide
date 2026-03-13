@@ -1,0 +1,9 @@
+[appendix]
+:appendix-caption: Annex
+== Revision History
+
+[cols="12,18,12,12,46",options="header"]
+|===
+|Date |Release |Proposed by | Primary clauses modified |Approved by
+|January 2026| 1.0.0 | SC-IMT | Initial approval for publication| EC-78
+|===
