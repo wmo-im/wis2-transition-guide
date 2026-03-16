@@ -5,5 +5,5 @@
 [cols="12,18,12,12,46",options="header"]
 |===
 |Date |Release |Proposed by | Primary clauses modified |Approved by
-|January 2026| 1.0.0 | SC-IMT | Initial approval for publication| EC-78
+|June 2024| 1.0.0 | INFCOM | Initial approval for publication (2024 edition)| EC-78
 |===
