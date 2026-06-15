@@ -6,4 +6,5 @@
 |===
 |Date |Release |Proposed by | Primary clauses modified |Approved by
 |June 2024| 1.0.0 | INFCOM | Initial approval for publication (2024 edition)| EC-78
+|June 2026| 1.1.0 | INFCOM | https://github.com/wmo-im/wis2-transition-guide/milestone/1?closed=1[See GitHub]  | Fast-track 2026-1
 |===
