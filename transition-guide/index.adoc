@@ -1,7 +1,7 @@
 :title: Provisions for the Transition from the WMO Information System (WIS) 1.0 and Global Telecommunication System to WIS 2.0 (WMO-No. 1323) (APPROVED)
 :titletext: {title}
-:version: 1.0.0
-:date: {docdate}
+:version: 1.1.0
+:date: 2026-06-15
 :copyright: Copyright © 2024 World Meteorological Organization (WMO)
 :doctype: book
 :encoding: utf-8
