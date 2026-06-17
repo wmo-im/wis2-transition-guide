@@ -96,10 +96,10 @@ body {
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong class="big">World Meteorological Organization</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2026-03-16</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2026-06-15</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Version: 1.0.0</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Version: 1.1.0</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Document status: APPROVED</p></td>
@@ -446,6 +446,18 @@ During the transition period, in order to avoid some WIS centres being forced to
 <div class="paragraph">
 <p>It is important to note that subscribing to these topics should not imply pushing the data onto the GTS immediately. Making the data available on the GTS will require explicit approval from the WMO Secretariat. It is up to the gateway operators to implement this "kill switch" (for example, by disabling the subscription or blocking the flow between the data consumer and the MSS for those TTAAii/CCCC only).</p>
 </div>
+<div class="paragraph">
+<p>To complete the migration to WIS2, a WIS centre must be able to consume data from WIS2. This requirement is described in the <em>Guide to WIS</em>, Volume II, section 1.2 <em>Information for the data consumer</em>.</p>
+</div>
+<div class="paragraph">
+<p>Data published natively on WIS2 will be advertised through notification messages published on the standard WIS2 Topic Hierarchy described in the <em>Manual on WIS</em>, Volume II, Appendix D.</p>
+</div>
+<div class="paragraph">
+<p>Data published on the GTS is re-published on WIS2 by the GTS-to-WIS2 gateways using the so-called <em>GTS transition topics</em> (e.g., <code>[origin|cache]/a/wis2/de-dwd-gts-to-wis2/data/[core|recommended]/T1/T2/A1/A2/ii/CCCC</code>). As a result, some data is advertised through notification messages published on both native WIS2 topics <em>and</em> GTS transition topics.</p>
+</div>
+<div class="paragraph">
+<p>Where data is natively available on WIS2, data consumers should subscribe to notifications from WIS2 native topics in preference to the GTS transition topics. This avoids potential data loss that may occur when GTS-to-WIS2 gateways periodically discontinue the publication of notification messages on GTS transition topics for data originating from WIS centres that have completed their migration. Once the GTS to WIS2 transition is complete, notification messages will no longer be published on the GTS transition topics.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -650,6 +662,13 @@ The publication <a href="https://library.wmo.int/idurl/4/55155"><em>Weather Repo
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Initial approval for publication (2024 edition)</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">EC-78</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">June 2026</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">1.1.0</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">SC-IMT</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><a href="https://github.com/wmo-im/wis2-transition-guide/milestone/1?closed=1">See GitHub</a></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Fast-track 2026-1</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -666,7 +685,7 @@ The publication <a href="https://library.wmo.int/idurl/4/55155"><em>Weather Repo
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-03-16 16:09:35 UTC
+Last updated 2026-06-17 01:45:19 UTC
 </div>
 </div>
 </body>
